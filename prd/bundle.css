@@ -650,8 +650,33 @@ a {
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle; }
 
-#index-container img {
-  width: 100%;
-  height: 100%; }
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between; }
+  body footer {
+    height: 44px; }
+    body footer ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-around;
+      justify-content: space-around; }
+      body footer ul li {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        justify-content: between; }
 
 /*# sourceMappingURL=bundle.css.map*/

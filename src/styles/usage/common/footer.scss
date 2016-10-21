@@ -1,0 +1,28 @@
+$background:#fafafa;
+$icon:#61636b;
+$activeIcon:#007cd1;
+body{
+    @include flexbox();
+    @include flex-direction(column);
+    @include justify-content(space-between);
+
+    footer{
+      height: 44px;
+
+      ul{
+        @include flexbox();
+        @include justify-content(space-around);
+
+        li{
+          @include flexbox();
+          @include flex-direction(column);
+          @include justify-content(center);
+          @include align-items(center);
+          img{
+            width: 0.25rem;
+            height: 0.25rem;
+          }
+        }
+      }
+    }
+}

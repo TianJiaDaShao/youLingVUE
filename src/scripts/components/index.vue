@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div class="index-container">
       <router-view></router-view>
     </div>
@@ -16,7 +15,6 @@
           </li>
         </ul>
     </footer>
-  </div>
 </template>
 
 <script>

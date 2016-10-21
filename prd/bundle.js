@@ -153,7 +153,6 @@
 	  value: true
 	});
 	// <template>
-	//   <div>
 	//     <div class="index-container">
 	//       <router-view></router-view>
 	//     </div>
@@ -164,13 +163,12 @@
 	//               v-for="tab in tablist"
 	//               v-link="{path:tab.path}"
 	//           >
-	//             <img v-if="cur == $index" :src="tab.icon">
-	//             <img v-else :src="tab.activeIcon">
+	//             <img v-if="cur == $index" :src="tab.activeIcon">
+	//             <img v-else :src="tab.icon">
 	//             <b>{{tab.name}}</b>
 	//           </li>
 	//         </ul>
 	//     </footer>
-	//   </div>
 	// </template>
 	//
 	// <script>
@@ -197,7 +195,7 @@
 /* 7 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div>\n  <div class=\"index-container\">\n    <router-view></router-view>\n  </div>\n  <footer id=\"footer\">\n      <ul>\n        <li :class=\"cur == $index ? 'active' : ''\"\n            @click=\"changPage($index)\"\n            v-for=\"tab in tablist\"\n            v-link=\"{path:tab.path}\"\n        >\n          <img v-if=\"cur == $index\" :src=\"tab.icon\">\n          <img v-else :src=\"tab.activeIcon\">\n          <b>{{tab.name}}</b>\n        </li>\n      </ul>\n  </footer>\n</div>\n";
+	module.exports = "\n<div class=\"index-container\">\n  <router-view></router-view>\n</div>\n<footer id=\"footer\">\n    <ul>\n      <li :class=\"cur == $index ? 'active' : ''\"\n          @click=\"changPage($index)\"\n          v-for=\"tab in tablist\"\n          v-link=\"{path:tab.path}\"\n      >\n        <img v-if=\"cur == $index\" :src=\"tab.activeIcon\">\n        <img v-else :src=\"tab.icon\">\n        <b>{{tab.name}}</b>\n      </li>\n    </ul>\n</footer>\n";
 
 /***/ },
 /* 8 */
@@ -226,7 +224,7 @@
 /* 9 */
 /***/ function(module, exports) {
 
-	module.exports = "\n\n";
+	module.exports = "\n<div></div>\n";
 
 /***/ },
 /* 10 */
@@ -255,7 +253,7 @@
 /* 11 */
 /***/ function(module, exports) {
 
-	module.exports = "\n\n";
+	module.exports = "\n123\n";
 
 /***/ },
 /* 12 */
@@ -284,7 +282,7 @@
 /* 13 */
 /***/ function(module, exports) {
 
-	module.exports = "\n\n";
+	module.exports = "\n132\n";
 
 /***/ },
 /* 14 */
@@ -313,7 +311,7 @@
 /* 15 */
 /***/ function(module, exports) {
 
-	module.exports = "\n\n";
+	module.exports = "\n123\n";
 
 /***/ },
 /* 16 */
