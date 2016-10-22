@@ -29,10 +29,7 @@
           {path:'/mine',icon:'./images/md_tabbar_mine.png',activeIcon:'md_tabbar_mine_on.png',name:'我的'}
         ]
       }
-
-
-
-
+    },
 
 
     methods:{
