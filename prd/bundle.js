@@ -90,7 +90,7 @@
 	
 	router.map({
 	  '/': {
-	    component: _firstPage2.default
+	    component: _index2.default
 	  },
 	  '/index': {
 	    component: _index2.default,
@@ -170,12 +170,7 @@
 	      imgurl: './images/md_splash.jpg'
 	    };
 	  },
-	
-	  methods: {
-	    ready: function ready() {
-	      setTimeOut(function () {}, 1000);
-	    }
-	  }
+	  ready: function ready() {}
 	};
 	// </script>
 
@@ -248,7 +243,7 @@
 	  data: function data() {
 	    return {
 	      cur: 0,
-	      tablist: [{ path: '/', icon: './images/tuiJian.png', acticeIcon: './images/tuiJian-active.png', name: '推荐' }, { path: '/danPin', icon: './images/danPin.png', activeIcon: './images/danPin-active.png', name: '单品' }, { path: '/zhangZiShi', icon: './images/zhangZiShi.png', activeIcon: './images/zhangZiShi-active.png', name: '涨姿势' }, { path: '/mine', icon: './images/mine.png', activeIcon: '', name: '我的' }]
+	      tablist: [{ path: '/index/', icon: './images/md_tabbar_featured.png', acticeIcon: './images/md_tabbar_featured_on.png', name: '推荐' }, { path: '/index/danPin', icon: './images/md_tabbar_singleitem.png', activeIcon: './images/md_tabbar_singleitem_on.png', name: '单品' }, { path: '/index/zhangZiShi', icon: './images/md_tabbar_aritcles.png', activeIcon: './images/md_tabbar_aritcles_on.png', name: '涨姿势' }, { path: '/mine', icon: './images/md_tabbar_mine.png', activeIcon: 'md_tabbar_mine_on.png', name: '我的' }]
 	    };
 	  },
 	
