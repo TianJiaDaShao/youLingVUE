@@ -86,6 +86,9 @@
 	
 	router.map({
 	  '/': {
+	    component: firstPage
+	  },
+	  '/index': {
 	    component: _index2.default,
 	    subRoutes: {
 	      '/': {
@@ -96,11 +99,11 @@
 	      },
 	      '/zhangZiShi': {
 	        component: _zhangZiShi2.default
-	      },
-	      '/mine': {
-	        component: _mine2.default
 	      }
 	    }
+	  },
+	  '/mine': {
+	    component: _mine2.default
 	  }
 	});
 	
@@ -311,7 +314,7 @@
 /* 15 */
 /***/ function(module, exports) {
 
-	module.exports = "\n123\n";
+	module.exports = "\n<div>123</div>\n";
 
 /***/ },
 /* 16 */

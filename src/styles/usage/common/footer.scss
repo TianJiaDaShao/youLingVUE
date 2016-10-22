@@ -8,16 +8,23 @@ body{
 
     footer{
       height: 44px;
+      background: $background;
 
       ul{
         @include flexbox();
         @include justify-content(space-around);
 
+        .active{
+          color: $activeIcon;
+        }
         li{
           @include flexbox();
           @include flex-direction(column);
           @include justify-content(center);
           @include align-items(center);
+          color: $icon;
+
+
           img{
             width: 0.25rem;
             height: 0.25rem;

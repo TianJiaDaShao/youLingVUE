@@ -1,5 +1,6 @@
 import "../styles/usage/page/app.scss";
 
+import firstPage from "./components/firstPage.vue";
 import index from "./components/index.vue";
 import tuiJian from "./components/tuiJian.vue";
 import danPin from "./components/danPin.vue";
@@ -15,8 +16,11 @@ let router = new VueRouter();
 let App=Vue.extend({});
 
 router.map({
-   '/':{
-     component:index,
+    '/':{
+      component:firstPage
+    },
+    '/index':{
+      component:index,
       subRoutes:{
         '/':{
           component:tuiJian
@@ -26,11 +30,11 @@ router.map({
         },
         '/zhangZiShi':{
           component:zhangZiShi
-        },
-        '/mine':{
-          component:mine
         }
      }
+    },
+    '/mine':{
+     component:mine
    }
 });
 
