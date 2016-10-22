@@ -17,7 +17,7 @@ let App=Vue.extend({});
 
 router.map({
     '/':{
-      component:firstPage
+      component:index
     },
     '/index':{
       component:index,
