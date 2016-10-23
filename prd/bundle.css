@@ -688,8 +688,8 @@ body {
         align-items: center;
         color: #61636b; }
         body footer ul li img {
-          width: 0.25rem;
-          height: 0.25rem; }
+          width: 24px;
+          height: 24px; }
 
 #firstPage_imgurl {
   width: 100%;
