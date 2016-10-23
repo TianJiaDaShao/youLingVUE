@@ -6,6 +6,12 @@ body{
     @include flex-direction(column);
     @include justify-content(space-between);
 
+    .index-container{
+      @include flex(1);
+      width: 100%;
+      overflow: hidden;
+    }
+
     footer{
       height: 44px;
       background: $background;
@@ -26,8 +32,8 @@ body{
 
 
           img{
-            width: 0.25rem;
-            height: 0.25rem;
+            width: 24px;
+            height: 24px;
           }
         }
       }
