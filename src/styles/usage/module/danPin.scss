@@ -1,0 +1,138 @@
+body > div {
+  height: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+}
+
+.danPin-container {
+    height: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+
+    > * {
+        width: 100%;
+    }
+
+    nav {
+        height: 0.35rem;
+
+        ul {
+            width: 100%;
+            height: 100%;
+            @include flexbox();
+            background: #fff;
+
+            li {
+                @include flex(1);
+                @include border(0 0 1px 0, #d9d9d9);
+                font-size: 0.14rem;
+                text-align: center;
+                line-height: 0.35rem;
+
+                &.active {
+                    border-bottom: solid 0.02rem rgb(1,125,209);
+                    color: rgb(1,125,209);
+                }
+            }
+        }
+    }
+
+    > section {
+        @include flex(1);
+        overflow: hidden;
+        width: 100%;
+
+        .swiper-container {
+            height: 100%;
+
+            .swiper-wrapper {
+              height: 100%;
+              display: flex;
+              flex-direction: row;
+              .swiper-slide {
+                height: 100%;
+              }
+            }
+
+            section {
+                height: 100%;
+                overflow: hidden;
+
+                ul {
+                    @include flexbox();
+                    flex-wrap: wrap;
+                    align-content: flex-start;
+                    width: 100%;
+
+                    li {
+                        width: 50%;
+                        padding: 3vh;
+                        @include border($border-width:1px,$border-color:rgb(221,221,221),$border-style:solid,$radius:5px);
+
+
+                        &:nth-child(odd) {
+                            padding: 0.05rem 0.025rem 0 0.05rem;
+                        }
+
+                        &:nth-child(even) {
+                            padding: 0.05rem 0.05rem 0 0.025rem;
+                        }
+
+                        &:nth-last-child(1),
+                        &:nth-last-child(2) {
+                            padding-bottom: 0.04rem;
+                        }
+
+                        span {
+                            width: 100%;
+                            display: block;
+                            text-align: center;
+
+                            b,
+                            i,
+                            em {
+                                background: #fff;
+                                display: block;
+                                font-weight: normal;
+
+                                @media screen and (max-width:321px) {
+                                    & {
+                                        font-size: 15px;
+                                    }
+                                }
+                                @media screen and (min-width:321px) and (max-width:400px) {
+                                    & {
+                                        font-size: 16px;
+                                    }
+                                }
+                                @media screen and (min-width:400px) {
+                                    & {
+                                        font-size: 18px;
+                                    }
+                                }
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            b {
+                                font-size: 12px;
+                                padding: 0.08rem 0.05rem;
+                                width:100%;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                            em{
+                                font-size: 14px;
+                                font-weight: bold;
+                                padding: 0 0.05rem 0.05rem 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
