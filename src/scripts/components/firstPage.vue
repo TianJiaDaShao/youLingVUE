@@ -9,12 +9,8 @@
           imgurl:'./images/md_splash.jpg'
         }
       },
-      methods:{
-          ready:function(){
-              setTimeOut(function(){
-                  
-              },1000)
-          }
+      ready(){
+        
       }
     }
 </script>
