@@ -9,8 +9,8 @@
                 <img src="/images/md_share.png" @click="showShare" alt="">
             </div>
         </header>
-        <div id="share">
-            <p class="sharetop"><img src="/images/com_taobao_tae_sdk_web_view_title_bar_close.9.png" alt="">&nbsp;&nbsp;分享</p>
+        <div id="share" v-if="shareshow">
+            <p class="sharetop"><img @click="notshowShare" src="/images/com_taobao_tae_sdk_web_view_title_bar_close.9.png" alt="">&nbsp;&nbsp;分享</p>
             <ul>
                 <li><img src="/images/md_share_wechat.png" alt="">
                     <p>微信好友</p>
@@ -74,15 +74,16 @@
     export default {
         data() {
                 return {
-                    list: []
+                    list: [],
+                    shareshow:false
                 }
             },
             ready: function() {
+                console.log("点击返回&点击分享");
                 var that = this;
                 this.$http.get('/mock/zhangZiShi.json')
                     .then((res) => {
                         this.list.push(res.data.data[0]); //对象转换为数组
-                        console.log(this.list);
                         setTimeout(function() {
                             new IScroll('#index-scroll');
                         }, 500);
@@ -90,7 +91,10 @@
             },
             methods: {
                 showShare() {
-                    document.getElementById("share").display="none"
+                    this.shareshow=true;
+                },
+                notshowShare(){
+                    this.shareshow=false;
                 }
             }
     }

@@ -68,14 +68,15 @@
                 @include flexbox();
                 @include flex-direction(column);
                 @include align-items(center);
+                @include justify-content(space-between);
                 img{
                     width: 15vw;
                     height: 15vw;
                 }
                 p{
                     font-size: 4vw;
-                    height: 7vw;
-                    line-height: 7vw;
+                    height: 4vw;
+                    line-height: 4vw;
                 }
             }
         };

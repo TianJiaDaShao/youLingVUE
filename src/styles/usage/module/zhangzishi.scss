@@ -5,6 +5,7 @@
     overflow: hidden;
 }
 .gesture {
+    background: #fff;
     width: 100vw;
     height: 100%;
     @include flexbox();
@@ -63,7 +64,7 @@
                     span{
                         height: 100%;
                         line-height: 100%;
-                        background: #c5c8d0;
+                        background: #dadfda;
                         display: block;
                         border-radius: 2vw;
                         padding: 0 4px;
