@@ -783,7 +783,9 @@ body > div {
     .danPin-container > section .swiper-container {
       height: 100%; }
       .danPin-container > section .swiper-container .swiper-wrapper {
-        height: 100%; }
+        height: 100%;
+        display: flex;
+        flex-direction: row; }
         .danPin-container > section .swiper-container .swiper-wrapper .swiper-slide {
           height: 100%; }
       .danPin-container > section .swiper-container section {
