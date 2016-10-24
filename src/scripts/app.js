@@ -54,6 +54,6 @@ router.map({
 
 router.start(App, 'body');
 
-setTimeout(function(){
-    router.go('/index');
-},3000)
+// setTimeout(function(){
+//     router.go('/index');
+// },3000)

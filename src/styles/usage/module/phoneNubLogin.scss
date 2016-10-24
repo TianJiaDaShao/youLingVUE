@@ -3,12 +3,68 @@
     @include flexbox();
     @include flex-direction(column);
     @include align-items(center);
-    width: 83.33vw;
+    width: 100%;
     margin: 0 auto;
     margin-top: 2.24vh;
 
     .logo{
       width: 43vw;
-      margin-bottom: 10.25vh;
+      margin-bottom: 5.77vh;
+    }
+
+    nav{
+      @include justify-content(center);
+      @include flexbox(flex);
+      width: 100%;
+      font-size: 2.77vw;
+      color: $phoneNubLogin;
+      text-align: center;
+      display: flex;
+
+        div{
+          width: 50%;
+          height: 4vh;
+          @include border($border-width:0 0 1px 0,$border-color:$phoneNubLogin);
+
+            span{
+              display: block;
+              width: 100%;
+              height: 2.4vh;
+              line-height: 2.4vh;
+              margin-bottom: 1.44vh;
+            }
+
+            &:first-child{
+              span{
+                @include border($border-width:0 1px 0 0,$border-color:$phoneNubLogin);
+              }
+            }
+          }
+
+        .navLoginActive{
+            @include border($border-width:0 0 4px 0,$border-color:#fff);
+            color: #fff;
+        }
+    }
+
+    .swiper-wrapper{
+      padding-top: 5.29vh;
+      padding-bottom: 3.2vh;
+        .swiper-slide{
+            padding-left: 7.33vw;
+            input{
+              width: 83.33vw;
+              font-size: 3.33vw;
+              height: 5.55vw;
+              background: rgba(255,255,255,0);
+              color:$phoneNubLogin;
+              border:0;
+              border-bottom: 1px solid $phoneNubLogin;
+
+              &:first-child{
+                margin-bottom: 3.04vh;
+              }
+          }
+        }
     }
 }
