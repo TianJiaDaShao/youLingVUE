@@ -654,6 +654,7 @@ body {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -661,6 +662,13 @@ body {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between; }
+  body .index-container {
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: .1px;
+    width: 100%; }
   body .index-container {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -702,11 +710,196 @@ body {
   width: 100%;
   height: 100%; }
 
-<<<<<<< HEAD
-.tuijian-container {
-=======
+.mine_container {
+  background: url("/images/md_login_bg.jpg");
+  height: 100%;
+  padding-top: 2.4vh;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start; }
+  .mine_container .Xurl {
+    width: 4.16vw;
+    height: 4.16vw;
+    margin-left: 3.61vw; }
+  .mine_container .mine_main {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: .1px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 83.33vw;
+    margin: 0 auto;
+    margin-top: 6.73vh; }
+    .mine_container .mine_main .logo {
+      width: 43vw;
+      margin-bottom: 10.25vh; }
+    .mine_container .mine_main .mine_label {
+      width: 100%;
+      color: #fefefe;
+      font-size: 2.5vw; }
+    .mine_container .mine_main input {
+      width: 100%;
+      color: #fff;
+      background: rgba(255, 255, 255, 0);
+      border: 0; }
+    .mine_container .mine_main .mine_bottom {
+      width: 100%;
+      height: 0.24vh;
+      background: #fff;
+      margin-bottom: 3.36vh; }
+    .mine_container .mine_main .mine_register {
+      width: 100%;
+      height: 5.13vh;
+      background: #007cd1;
+      opacity: 0.7;
+      text-align: center;
+      line-height: 5.13vh;
+      color: #fff;
+      margin-bottom: 3.04vh; }
+    .mine_container .mine_main .phone_login {
+      width: 100%;
+      color: #fefefe;
+      font-size: 2.77vw;
+      height: 2.77vw;
+      line-height: 2.77vw;
+      margin-bottom: 6.25vh; }
+    .mine_container .mine_main .other_login {
+      font-size: 2.5vw;
+      color: #c2c2c3;
+      height: 2.5vw;
+      line-height: 2.5vw; }
+    .mine_container .mine_main .other_login_img img {
+      width: 10vw;
+      margin: 2.24vh 2.5vw; }
+    .mine_container .mine_main .xieyi {
+      font-size: 2.5vw;
+      color: #c2c2c3;
+      height: 2.5vw;
+      line-height: 2.5vw; }
+      .mine_container .mine_main .xieyi span {
+        color: #fefefe; }
+
+.phoneNubLogin_main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  width: .1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 83.33vw;
+  margin: 0 auto;
+  margin-top: 2.24vh; }
+  .phoneNubLogin_main .logo {
+    width: 43vw;
+    margin-bottom: 10.25vh; }
+
+.index-container {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  width: .1px;
+  width: 100vw;
+  overflow: hidden; }
+
+.tuijian-box {
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .tuijian-box header {
+    width: 100vw;
+    height: 12vw;
+    background: #fff;
+    font-size: 20px;
+    text-indent: 4vw;
+    line-height: 12vw;
+    font-weight: bold;
+    color: #666; }
+  .tuijian-box section {
+    width: 100vw;
+    overflow: hidden;
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    .tuijian-box section ul {
+      height: 100%;
+      width: 92vw;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      align-items: center; }
+      .tuijian-box section ul li {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center; }
+        .tuijian-box section ul li img {
+          display: block;
+          width: 100%;
+          height: 51.56vw; }
+        .tuijian-box section ul li i {
+          width: 100%;
+          line-height: 8vw;
+          font-size: 6.5vw; }
+        .tuijian-box section ul li p {
+          width: 100%;
+          line-height: 5.5vw;
+          font-size: 4.5vw; }
+        .tuijian-box section ul li b.b1 {
+          height: 100px; }
+
 body > div {
->>>>>>> a7210dbc1518d3053920132214cf5053ccbae249
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -715,60 +908,6 @@ body > div {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   flex-direction: column; }
-<<<<<<< HEAD
-  .tuijian-container > * {
-    width: 100%; }
-  .tuijian-container header {
-    height: 0.44rem; }
-    .tuijian-container header ul {
-      width: 100%;
-      height: 100%;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: flex;
-      background-color: #0dc441; }
-      .tuijian-container header ul li {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        height: 100%; }
-        .tuijian-container header ul li:nth-child(2) {
-          -webkit-box-flex: 1;
-          -webkit-flex: 1;
-          flex: 1;
-          width: .1px; }
-        .tuijian-container header ul li:not(:nth-child(2)) {
-          width: 0.44rem;
-          font-size: 0.26rem;
-          color: #fff;
-          opacity: 0.5; }
-        .tuijian-container header ul li span {
-          width: 0.60rem;
-          height: 0.25rem;
-          background: gray;
-          font-size: 0.14rem;
-          line-height: 0.25rem;
-          text-align: center; }
-          .tuijian-container header ul li span:first-child {
-            border-radius: 0.10rem 0 0 0.10rem; }
-          .tuijian-container header ul li span:last-child {
-            border-radius: 0 0.10rem 0.10rem 0; }
-          .tuijian-container header ul li span.active {
-            background-color: #64d985;
-            color: #fff; }
-          .tuijian-container header ul li span:not(.active) {
-            background-color: rgba(100, 217, 133, 0.5);
-            color: rgba(255, 255, 255, 0.5); }
-  .tuijian-container nav {
-    height: 0.35rem; }
-    .tuijian-container nav ul {
-=======
 
 .danPin-container {
   height: 100%;
@@ -784,18 +923,13 @@ body > div {
   .danPin-container nav {
     height: 0.35rem; }
     .danPin-container nav ul {
->>>>>>> a7210dbc1518d3053920132214cf5053ccbae249
       width: 100%;
       height: 100%;
       display: -webkit-box;
       display: -webkit-flex;
       display: flex;
       background: #fff; }
-<<<<<<< HEAD
-      .tuijian-container nav ul li {
-=======
       .danPin-container nav ul li {
->>>>>>> a7210dbc1518d3053920132214cf5053ccbae249
         -webkit-box-flex: 1;
         -webkit-flex: 1;
         flex: 1;
@@ -804,11 +938,7 @@ body > div {
         font-size: 0.14rem;
         text-align: center;
         line-height: 0.35rem; }
-<<<<<<< HEAD
-        .tuijian-container nav ul li::after {
-=======
         .danPin-container nav ul li::after {
->>>>>>> a7210dbc1518d3053920132214cf5053ccbae249
           pointer-events: none;
           position: absolute;
           z-index: 999;
@@ -822,90 +952,31 @@ body > div {
           -webkit-transform-origin: 0 0;
           transform-origin: 0 0; }
           @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
-<<<<<<< HEAD
-            .tuijian-container nav ul li::after {
-              width: 100%;
-              height: 100%; } }
-          @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
-            .tuijian-container nav ul li::after {
-=======
             .danPin-container nav ul li::after {
               width: 100%;
               height: 100%; } }
           @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
             .danPin-container nav ul li::after {
->>>>>>> a7210dbc1518d3053920132214cf5053ccbae249
               width: 200%;
               height: 200%;
               -webkit-transform: scale(0.5);
               transform: scale(0.5); } }
           @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
-<<<<<<< HEAD
-            .tuijian-container nav ul li::after {
-=======
             .danPin-container nav ul li::after {
->>>>>>> a7210dbc1518d3053920132214cf5053ccbae249
               width: 300%;
               height: 300%;
               -webkit-transform: scale(0.33333);
               transform: scale(0.33333); } }
-<<<<<<< HEAD
-        .tuijian-container nav ul li.active {
-          border-bottom: solid 0.02rem #0dc441;
-          color: #0dc441; }
-  .tuijian-container > section {
-=======
         .danPin-container nav ul li.active {
           border-bottom: solid 0.02rem #017dd1;
           color: #017dd1; }
   .danPin-container > section {
->>>>>>> a7210dbc1518d3053920132214cf5053ccbae249
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex: 1;
     width: .1px;
     overflow: hidden;
     width: 100%; }
-<<<<<<< HEAD
-    .tuijian-container > section .swiper-container {
-      height: 100%; }
-      .tuijian-container > section .swiper-container .swiper-wrapper {
-        height: 100%; }
-        .tuijian-container > section .swiper-container .swiper-wrapper .swiper-slide {
-          height: 100%; }
-      .tuijian-container > section .swiper-container section {
-        height: 100%;
-        overflow: hidden; }
-        .tuijian-container > section .swiper-container section .head {
-          text-align: center;
-          height: 0.35rem;
-          line-height: 0.35rem; }
-        .tuijian-container > section .swiper-container section .head img {
-          width: 0.16rem;
-          display: inline-block;
-          transform: rotate(180deg);
-          -webkit-transform: rotate(180deg);
-          transition: transform 150ms;
-          -webkit-transition: transform 150ms; }
-        .tuijian-container > section .swiper-container section .up {
-          transform: rotate(360deg) !important;
-          -webkit-transform: rotate(360deg) !important; }
-        .tuijian-container > section .swiper-container section .foot {
-          text-align: center;
-          height: 0.35rem;
-          line-height: 0.35rem; }
-        .tuijian-container > section .swiper-container section .foot img {
-          display: inline-block;
-          width: 0.16rem;
-          /*transform: rotate(0deg);*/
-          /*-webkit-transform: rotate(0deg);*/
-          transition: transform 150ms;
-          -webkit-transition: transform 150ms; }
-        .tuijian-container > section .swiper-container section .down {
-          transform: rotate(180deg) !important;
-          -webkit-transform: rotate(180deg) !important; }
-        .tuijian-container > section .swiper-container section ul {
-=======
     .danPin-container > section .swiper-container {
       height: 100%; }
       .danPin-container > section .swiper-container .swiper-wrapper {
@@ -918,29 +989,12 @@ body > div {
         height: 100%;
         overflow: hidden; }
         .danPin-container > section .swiper-container section ul {
->>>>>>> a7210dbc1518d3053920132214cf5053ccbae249
           display: -webkit-box;
           display: -webkit-flex;
           display: flex;
           flex-wrap: wrap;
           align-content: flex-start;
           width: 100%; }
-<<<<<<< HEAD
-          .tuijian-container > section .swiper-container section ul li {
-            width: 50%;
-            padding: 3vh; }
-            .tuijian-container > section .swiper-container section ul li:nth-child(odd) {
-              padding: 0.05rem 0.025rem 0 0; }
-            .tuijian-container > section .swiper-container section ul li:nth-child(even) {
-              padding: 0.05rem 0 0 0.025rem; }
-            .tuijian-container > section .swiper-container section ul li:nth-last-child(1), .tuijian-container > section .swiper-container section ul li:nth-last-child(2) {
-              padding-bottom: 0.04rem; }
-            .tuijian-container > section .swiper-container section ul li span {
-              width: 100%;
-              display: block; }
-              .tuijian-container > section .swiper-container section ul li span b,
-              .tuijian-container > section .swiper-container section ul li span i {
-=======
           .danPin-container > section .swiper-container section ul li {
             width: 50%;
             padding: 3vh;
@@ -991,29 +1045,10 @@ body > div {
               .danPin-container > section .swiper-container section ul li span b,
               .danPin-container > section .swiper-container section ul li span i,
               .danPin-container > section .swiper-container section ul li span em {
->>>>>>> a7210dbc1518d3053920132214cf5053ccbae249
                 background: #fff;
                 display: block;
                 font-weight: normal; }
                 @media screen and (max-width: 321px) {
-<<<<<<< HEAD
-                  .tuijian-container > section .swiper-container section ul li span b,
-                  .tuijian-container > section .swiper-container section ul li span i {
-                    font-size: 15px; } }
-                @media screen and (min-width: 321px) and (max-width: 400px) {
-                  .tuijian-container > section .swiper-container section ul li span b,
-                  .tuijian-container > section .swiper-container section ul li span i {
-                    font-size: 16px; } }
-                @media screen and (min-width: 400px) {
-                  .tuijian-container > section .swiper-container section ul li span b,
-                  .tuijian-container > section .swiper-container section ul li span i {
-                    font-size: 18px; } }
-                .tuijian-container > section .swiper-container section ul li span b img,
-                .tuijian-container > section .swiper-container section ul li span i img {
-                  width: 100%; }
-              .tuijian-container > section .swiper-container section ul li span b {
-                padding: 0.03rem; }
-=======
                   .danPin-container > section .swiper-container section ul li span b,
                   .danPin-container > section .swiper-container section ul li span i,
                   .danPin-container > section .swiper-container section ul li span em {
@@ -1043,93 +1078,6 @@ body > div {
                 font-size: 14px;
                 font-weight: bold;
                 padding: 0 0.05rem 0.05rem 0; }
-
-.mine_container {
-  background: url("/images/md_login_bg.jpg");
-  height: 100%;
-  padding-top: 2.4vh;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start; }
-  .mine_container .Xurl {
-    width: 4.16vw;
-    height: 4.16vw;
-    margin-left: 3.61vw;
-    margin-bottom: 6.73vh; }
-  .mine_container .mine_main {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-    width: .1px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    width: 83.33vw;
-    margin: 0 auto; }
-    .mine_container .mine_main .logo {
-      width: 43vw;
-      margin-bottom: 10.25vh; }
-    .mine_container .mine_main .mine_label {
-      width: 100%;
-      color: #fefefe;
-      font-size: 2.5vw; }
-    .mine_container .mine_main input {
-      width: 100%;
-      color: #fff;
-      background: rgba(255, 255, 255, 0);
-      border: 0; }
-    .mine_container .mine_main .mine_bottom {
-      width: 100%;
-      height: 0.24vh;
-      background: #fff;
-      margin-bottom: 3.36vh; }
-    .mine_container .mine_main .mine_register {
-      width: 100%;
-      height: 5.13vh;
-      background: #007cd1;
-      opacity: 0.7;
-      text-align: center;
-      line-height: 5.13vh;
-      color: #fff;
-      margin-bottom: 3.04vh; }
-    .mine_container .mine_main .phone_login {
-      width: 100%;
-      color: #fefefe;
-      font-size: 2.77vw;
-      height: 2.77vw;
-      line-height: 2.77vw;
-      margin-bottom: 6.25vh; }
-    .mine_container .mine_main .other_login {
-      font-size: 2.5vw;
-      color: #c2c2c3;
-      height: 2.5vw;
-      line-height: 2.5vw; }
-    .mine_container .mine_main .other_login_img img {
-      width: 10vw;
-      margin: 2.24vh 2.5vw; }
-    .mine_container .mine_main .xieyi {
-      font-size: 2.5vw;
-      color: #c2c2c3;
-      height: 2.5vw;
-      line-height: 2.5vw; }
-      .mine_container .mine_main .xieyi span {
-        color: #fefefe; }
 
 .index-container {
   -webkit-box-flex: 1;
@@ -1467,6 +1415,5 @@ body > div {
         height: 120vw; }
       .gesture_detail section .detail b {
         font-weight: bold; }
->>>>>>> a7210dbc1518d3053920132214cf5053ccbae249
 
 /*# sourceMappingURL=bundle.css.map*/

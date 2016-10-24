@@ -1,14 +1,16 @@
 @charset "UTF-8";
 @import "../core/reset";
 
-@import "../common/footer";
 @import "../module/firstPage";
+@import "../common/footer";
 
 @import "../module/tuiJian";
 
-
 @import "../module/danPin";
-@import "../module/mine";
+@import "../module/danPinDetail";
+
 @import "../module/zhangzishi";
 @import "../module/zhangdetail";
-@import "../module/danPinDetail";
+
+@import "../module/mine";
+@import "../module/phoneNubLogin";

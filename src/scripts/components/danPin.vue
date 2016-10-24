@@ -132,10 +132,6 @@
 </template>
 
 <script>
-    var Vue = require('../libs/vue.js');
-    var VueResource = require('../libs/vue-resource.js');
-    Vue.use(VueResource);
-
     var mySwiper = null;
 
     export default {

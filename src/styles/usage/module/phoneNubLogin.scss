@@ -1,0 +1,14 @@
+.phoneNubLogin_main{
+    @include flex(1);
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    width: 83.33vw;
+    margin: 0 auto;
+    margin-top: 2.24vh;
+
+    .logo{
+      width: 43vw;
+      margin-bottom: 10.25vh;
+    }
+}
