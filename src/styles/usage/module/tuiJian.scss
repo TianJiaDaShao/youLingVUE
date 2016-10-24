@@ -1,62 +1,65 @@
-.index-container
- {
-    @include flex(1);
-    width: 100vw;
-    overflow: hidden;
+.index-container {
+    background-color: #fff;
+  @include flex(1);
+  width: 100vw;
+  overflow: hidden;
 }
 .tuijian-box {
+  width: 100vw;
+  height: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  @include align-items(center);
+  header {
     width: 100vw;
-    height: 100%;
+    height: 12vw;
+    background-color: #ccc;
+    font-size: 20px;
+    text-indent: 4vw;
+    line-height: 12vw;
+    font-weight: bold;
+    color: #666;
+  }
+  section {
+    width: 100vw;
+    overflow: hidden;
+    padding-top: 10px;
     @include flexbox();
-    @include flex-direction(column);
-    @include align-items(center);
-    header{
-        width: 100vw;
-        height: 12vw;
-        background: #fff;
-        font-size: 20px;
-        text-indent: 4vw;
-        line-height: 12vw;
-        font-weight: bold;
-        color: #666;
-    }
-    section{
-        width: 100vw;
-        overflow: hidden;
-        padding-top: 10px;
+    @include justify-content(center);
+    ul {
+      height: 100%;
+      width: 92vw;
+      @include flexbox();
+      @include flex-direction(column);
+      @include align-items(center);
+      li {
+        background-color: #fff;
+        width: 100%;
         @include flexbox();
-        @include justify-content(center);
-        ul{
-            height: 100%;
-            width: 92vw;
+        @include flex-direction(column);
+        .shops {
             @include flexbox();
-            @include flex-direction(column);
-            @include align-items(center);
-            li{
-                width: 100%;
-                @include flexbox();
-                @include flex-direction(column);
-                @include align-items(center);
-                img{
-                    display: block;
-                    width: 100%;
-                    height: 51.56vw;
-                };
-                i{
-                    width: 100%;
-                    line-height: 8vw;
-                    font-size: 6.5vw;
-                };
-                p{
-                    width: 100%;
-                    line-height: 5.5vw;
-                    font-size: 4.5vw;
-                }
-                b.b1{
-                    height: 100px;
-                }
-            }
+            flex-wrap: nowrap;
+          width: 100%;
+          height: 65vw;
+          img {
+            width: 100%;
+            @include flex(1);
+            display: inline-block;
+          }
         }
+        .avatar {
+          img {
 
+            width: 12vw;
+            height: 12vw;
+          }
+          i {
+            line-height: 8vw;
+            font-size: 6.5vw;
+          }
+        }
+      }
     }
+  }
 }
