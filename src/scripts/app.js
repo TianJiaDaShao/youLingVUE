@@ -5,6 +5,7 @@ import index from "./components/index.vue";
 import tuiJian from "./components/tuiJian.vue";
 import danPin from "./components/danPin.vue";
 import zhangZiShi from "./components/zhangZiShi.vue";
+import zhangdetail from "./components/zhangdetail.vue";
 import mine from "./components/mine.vue";
 import register from "./components/register.vue";
 import phoneNubLogin from "./components/phoneNubLogin.vue";
@@ -15,26 +16,28 @@ Vue.use(VueRouter);
 
 let router = new VueRouter();
 
-let App=Vue.extend({});
+let App = Vue.extend({});
 
 router.map({
+
     '/':{
       component:firstPage
     },
-    '/index':{
-      component:index,
-      subRoutes:{
-        '/':{
-          component:tuiJian
-        },
-        '/danPin':{
-          component:danPin
-        },
-        '/zhangZiShi':{
-          component:zhangZiShi
+    '/index': {
+        component: index,
+        subRoutes: {
+            '/': {
+                component: tuiJian
+            },
+            '/danPin': {
+                component: danPin
+            },
+            '/zhangZiShi': {
+                component: zhangZiShi
+            }
         }
-     }
     },
+
     '/mine':{
      component:mine,
      subRoutes:{
@@ -45,7 +48,12 @@ router.map({
          component:phoneNubLogin
        }
      }
-   }
+   },
+
+    '/zhangdetail': {
+        component: zhangdetail
+    }
+
 });
 
 router.start(App, 'body');
