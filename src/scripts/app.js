@@ -6,6 +6,8 @@ import tuiJian from "./components/tuiJian.vue";
 import danPin from "./components/danPin.vue";
 import zhangZiShi from "./components/zhangZiShi.vue";
 import mine from "./components/mine.vue";
+import register from "./components/register.vue";
+import phoneNubLogin from "./components/phoneNubLogin.vue";
 
 import Vue from "./libs/vue.js";
 import VueRouter from "./libs/vue-router.js";
@@ -17,7 +19,7 @@ let App=Vue.extend({});
 
 router.map({
     '/':{
-      component:index
+      component:firstPage
     },
     '/index':{
       component:index,
@@ -34,8 +36,20 @@ router.map({
      }
     },
     '/mine':{
-     component:mine
+     component:mine,
+     subRoutes:{
+       '/':{
+         component:register
+       },
+       '/phoneNubLogin':{
+         component:phoneNubLogin
+       }
+     }
    }
 });
 
 router.start(App, 'body');
+
+setTimeout(function(){
+    router.go('/index');
+},3000)

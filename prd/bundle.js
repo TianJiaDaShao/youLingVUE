@@ -72,11 +72,19 @@
 	
 	var _mine2 = _interopRequireDefault(_mine);
 	
-	var _vue = __webpack_require__(20);
+	var _register = __webpack_require__(20);
+	
+	var _register2 = _interopRequireDefault(_register);
+	
+	var _phoneNubLogin = __webpack_require__(23);
+	
+	var _phoneNubLogin2 = _interopRequireDefault(_phoneNubLogin);
+	
+	var _vue = __webpack_require__(26);
 	
 	var _vue2 = _interopRequireDefault(_vue);
 	
-	var _vueRouter = __webpack_require__(21);
+	var _vueRouter = __webpack_require__(27);
 	
 	var _vueRouter2 = _interopRequireDefault(_vueRouter);
 	
@@ -90,7 +98,7 @@
 	
 	router.map({
 	  '/': {
-	    component: _index2.default
+	    component: _firstPage2.default
 	  },
 	  '/index': {
 	    component: _index2.default,
@@ -107,11 +115,23 @@
 	    }
 	  },
 	  '/mine': {
-	    component: _mine2.default
+	    component: _mine2.default,
+	    subRoutes: {
+	      '/': {
+	        component: _register2.default
+	      },
+	      '/phoneNubLogin': {
+	        component: _phoneNubLogin2.default
+	      }
+	    }
 	  }
 	});
 	
 	router.start(App, 'body');
+	
+	setTimeout(function () {
+	  router.go('/index');
+	}, 3000);
 
 /***/ },
 /* 1 */
@@ -291,7 +311,7 @@
 /* 12 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div class=\"tuijian-h1\">为我推荐</div>\n";
+	module.exports = "\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n<div class=\"tuijian-h1\">为我推荐</div>\n";
 
 /***/ },
 /* 13 */
@@ -349,7 +369,7 @@
 /* 16 */
 /***/ function(module, exports) {
 
-	module.exports = "\n132\n";
+	module.exports = "\n<div class=\"gesture\">\n    <section id=\"index-scroll\">\n        <ul>\n            <li v-for=\"l in list\" v-link=\"{name:'detail',params:{id:l.id}}\" @click=\"clc\">\n                <img v-bind:src=\"l.img\" alt=\"\">\n                <i>{{l.title}}</i>\n                <p>{{l.detail}}</p>\n                <b><span>涨姿势</span><span>{{l.type}}</span></b>\n                <b><span>作者：领哥</span><span><img src=\"/images/md_view_xs.png\" alt=\"\">{{l.num}}</span><span>{{l.time}}</span></b>\n            </li>\n        </ul>\n    </section>\n</div>\n";
 
 /***/ },
 /* 17 */
@@ -391,22 +411,7 @@
 	// <template>
 	//     <div class="mine_container">
 	//         <img :src="Xurl" class="Xurl" onclick="window.history.go(-1)">
-	//         <div class="mine_main">
-	//             <img :src="logo" class="logo">
-	//             <h3 class="mine_label"><span>{{label}}</span></h3>
-	//             <input type="text" name="phone" value="">
-	//             <div class="mine_bottom"></div>
-	//             <div class="mine_register">{{register}}</div>
-	//             <h3 class="phone_login"><span>{{phone_login}}</span></h3>
-	//             <h4 class="other_login">{{other_login}}</h4>
-	//             <div class="other_login_img">
-	//               <img v-for="tab in other" :src="tab.other_login_img" alt="">
-	//             </div>
-	//             <h4 class="xieyi">
-	//               {{tongyi}}
-	//               <span>{{xieyi}}</span>
-	//             </h4>
-	//         </div>
+	//         <router-view></router-view>
 	//     </div>
 	// </template>
 	//
@@ -414,15 +419,7 @@
 	exports.default = {
 	  data: function data() {
 	    return {
-	      Xurl: '/images/md_nav_close_white.png',
-	      logo: '/images/md_logo.png',
-	      label: '手机号',
-	      register: '注册',
-	      phone_login: '手机号登录',
-	      other_login: '其他登录方式',
-	      other: [{ other_login_img: '/images/btn_login_wechat_n.png' }, { other_login_img: '/images/btn_login_taobao_n.png' }, { other_login_img: '/images/btn_login_weibo_n.png' }],
-	      tongyi: '注册代表同意',
-	      xieyi: '用户协议'
+	      Xurl: '/images/md_nav_close_white.png'
 	    };
 	  }
 	};
@@ -434,10 +431,163 @@
 /* 19 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div class=\"mine_container\">\n    <img :src=\"Xurl\" class=\"Xurl\" onclick=\"window.history.go(-1)\">\n    <div class=\"mine_main\">\n        <img :src=\"logo\" class=\"logo\">\n        <h3 class=\"mine_label\"><span>{{label}}</span></h3>\n        <input type=\"text\" name=\"phone\" value=\"\">\n        <div class=\"mine_bottom\"></div>\n        <div class=\"mine_register\">{{register}}</div>\n        <h3 class=\"phone_login\"><span>{{phone_login}}</span></h3>\n        <h4 class=\"other_login\">{{other_login}}</h4>\n        <div class=\"other_login_img\">\n          <img v-for=\"tab in other\" :src=\"tab.other_login_img\" alt=\"\">\n        </div>\n        <h4 class=\"xieyi\">\n          {{tongyi}}\n          <span>{{xieyi}}</span>\n        </h4>\n    </div>\n</div>\n";
+	module.exports = "\n<div class=\"mine_container\">\n    <img :src=\"Xurl\" class=\"Xurl\" onclick=\"window.history.go(-1)\">\n    <router-view></router-view>\n</div>\n";
 
 /***/ },
 /* 20 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__vue_script__ = __webpack_require__(21)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src\\scripts\\components\\register.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(22)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "./register.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 21 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	// <template>
+	//   <div class="mine_main">
+	//       <img :src="logo" class="logo">
+	//       <h3 class="mine_label"><span>{{label}}</span></h3>
+	//       <input type="text" name="phone" value="">
+	//       <div class="mine_bottom"></div>
+	//       <div class="mine_register">{{register}}</div>
+	//       <h3 class="phone_login"><span v-link="{path:phoneNubLoginPath}">{{phone_login}}</span></h3>
+	//       <h4 class="other_login">{{other_login}}</h4>
+	//       <div class="other_login_img">
+	//         <img v-for="tab in other" :src="tab.other_login_img" alt="">
+	//       </div>
+	//       <h4 class="xieyi">
+	//         {{tongyi}}
+	//         <span>{{xieyi}}</span>
+	//       </h4>
+	//   </div>
+	// </template>
+	//
+	// <script>
+	exports.default = {
+	  data: function data() {
+	    return {
+	      logo: '/images/md_logo.png',
+	      label: '手机号',
+	      register: '注册',
+	      phone_login: '手机号登录',
+	      other_login: '其他登录方式',
+	      other: [{ other_login_img: '/images/btn_login_wechat_n.png' }, { other_login_img: '/images/btn_login_taobao_n.png' }, { other_login_img: '/images/btn_login_weibo_n.png' }],
+	      tongyi: '注册代表同意',
+	      xieyi: '用户协议',
+	      phoneNubLoginPath: '/mine/phoneNubLogin'
+	    };
+	  }
+	};
+	// </script>
+
+	/* generated by vue-loader */
+
+/***/ },
+/* 22 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"mine_main\">\n    <img :src=\"logo\" class=\"logo\">\n    <h3 class=\"mine_label\"><span>{{label}}</span></h3>\n    <input type=\"text\" name=\"phone\" value=\"\">\n    <div class=\"mine_bottom\"></div>\n    <div class=\"mine_register\">{{register}}</div>\n    <h3 class=\"phone_login\"><span v-link=\"{path:phoneNubLoginPath}\">{{phone_login}}</span></h3>\n    <h4 class=\"other_login\">{{other_login}}</h4>\n    <div class=\"other_login_img\">\n      <img v-for=\"tab in other\" :src=\"tab.other_login_img\" alt=\"\">\n    </div>\n    <h4 class=\"xieyi\">\n      {{tongyi}}\n      <span>{{xieyi}}</span>\n    </h4>\n</div>\n";
+
+/***/ },
+/* 23 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__vue_script__ = __webpack_require__(24)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src\\scripts\\components\\phoneNubLogin.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(25)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "./phoneNubLogin.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 24 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	// <template>
+	//     <div class="phoneNubLogin_main">
+	//         <img :src="logo" class="logo">
+	//         <nav>
+	//             <span></span>
+	//         </nav>
+	//     </div>
+	// </template>
+	//
+	// <script>
+	exports.default = {
+	  data: function data() {
+	    return {
+	      logo: '/images/md_logo.png'
+	    };
+	  },
+	
+	
+	  methods: {
+	    changLogin: function changLogin(i) {
+	      this.index = i;
+	    }
+	  }
+	};
+	// </script>
+
+	/* generated by vue-loader */
+
+/***/ },
+/* 25 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"phoneNubLogin_main\">\n    <img :src=\"logo\" class=\"logo\">\n    <nav>\n        <span></span>\n    </nav>\n</div>\n";
+
+/***/ },
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global) {'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};/*!
@@ -3193,7 +3343,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 21 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
