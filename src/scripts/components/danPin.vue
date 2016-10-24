@@ -9,7 +9,7 @@
             <div class="swiper-container" id="index-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <section id="index-scroll">
+                        <section id="index-scroll1">
                             <ul>
                                 <li v-for="l in danPin">
                                   <span>
@@ -22,7 +22,7 @@
                         </section>
                     </div>
                     <div class="swiper-slide">
-                        <section id="index-scroll">
+                        <section id="index-scroll2">
                             <ul>
                                 <li v-for="l in danPin">
                                   <span>
@@ -35,7 +35,7 @@
                         </section>
                     </div>
                     <div class="swiper-slide">
-                        <section id="index-scroll">
+                        <section id="index-scroll3">
                             <ul>
                                 <li v-for="l in danPin">
                                   <span>
@@ -48,7 +48,7 @@
                         </section>
                     </div>
                     <div class="swiper-slide">
-                        <section id="index-scroll">
+                        <section id="index-scroll4">
                             <ul>
                                 <li v-for="l in danPin">
                                   <span>
@@ -61,7 +61,7 @@
                         </section>
                     </div>
                     <div class="swiper-slide">
-                        <section id="index-scroll">
+                        <section id="index-scroll5">
                             <ul>
                                 <li v-for="l in danPin">
                                   <span>
@@ -74,7 +74,7 @@
                         </section>
                     </div>
                     <div class="swiper-slide">
-                        <section id="index-scroll">
+                        <section id="index-scroll6">
                             <ul>
                                 <li v-for="l in danPin">
                                   <span>
@@ -87,7 +87,7 @@
                         </section>
                     </div>
                     <div class="swiper-slide">
-                        <section id="index-scroll">
+                        <section id="index-scroll7">
                             <ul>
                                 <li v-for="l in danPin">
                                   <span>
@@ -100,7 +100,7 @@
                         </section>
                     </div>
                     <div class="swiper-slide">
-                        <section id="index-scroll">
+                        <section id="index-scroll8">
                             <ul>
                                 <li v-for="l in danPin">
                                   <span>
@@ -113,7 +113,7 @@
                         </section>
                     </div>
                     <div class="swiper-slide">
-                        <section id="index-scroll">
+                        <section id="index-scroll9">
                             <ul>
                                 <li v-for="l in danPin">
                                   <span>
@@ -153,11 +153,68 @@
                         this.danPin = res.data.data;
 
                         setTimeout(function() {
-                            new IScroll('#index-scroll',{
+                            new IScroll('#index-scroll1',{
                                     click:true
                             }
                         );
                         }, 500);
+
+                        setTimeout(function() {
+                            new IScroll('#index-scroll2',{
+                                    click:true
+                            }
+                        );
+                        }, 500);
+
+                        setTimeout(function() {
+                            new IScroll('#index-scroll3',{
+                                    click:true
+                            }
+                        );
+                        }, 500);
+
+                        setTimeout(function() {
+                            new IScroll('#index-scroll4',{
+                                    click:true
+                            }
+                        );
+                        }, 500);
+
+                        setTimeout(function() {
+                            new IScroll('#index-scroll5',{
+                                    click:true
+                            }
+                        );
+                        }, 500);
+
+                        setTimeout(function() {
+                            new IScroll('#index-scroll6',{
+                                    click:true
+                            }
+                        );
+                        }, 500);
+
+                        setTimeout(function() {
+                            new IScroll('#index-scroll7',{
+                                    click:true
+                            }
+                        );
+                        }, 500);
+
+                        setTimeout(function() {
+                            new IScroll('#index-scroll8',{
+                                    click:true
+                            }
+                        );
+                        }, 500);
+
+                        setTimeout(function() {
+                            new IScroll('#index-scroll9',{
+                                    click:true
+                            }
+                        );
+                        }, 500);
+
 
                         mySwiper = new Swiper("#index-swiper", {
                             onSlideChangeStart: function() {
