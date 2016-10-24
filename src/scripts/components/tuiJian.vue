@@ -5,9 +5,14 @@
         </header>
         <section id="index-scroll">
             <ul>
-                <li v-for="l in list" @click="clc">
-                    <img v-bind:src="l.img" alt="">
-                    <i>{{l.title}}</i>
+                <li v-for="l in list" @click="clc" v-link="{path:'/tuiJianDetail'}" >
+                  <div class="shops">
+                    <img v-for="limg in l.shops" v-bind:src="limg.img" >
+                  </div>
+                  <div class="avatar">
+                    <img  v-bind:src="l.avatar_img" alt="">
+                    <i>{{l.avatar_name}}</i>
+                  </div>
                 </li>
             </ul>
         </section>
@@ -23,13 +28,13 @@
             },
             ready: function() {
                 var that = this;
-                this.$http.get('/mock/tuijian.json')
+                this.$http.get('/mock/tuiJian.json')
                     .then((res) => {
-                        console.log(res.data.data);
+                        console.log(res.data.data.length);
                         this.list = res.data.data;
                         setTimeout(function() {
                             new IScroll('#index-scroll', {
-                                true
+                              click:true
                             });
                         }, 500);
                     })
