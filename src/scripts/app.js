@@ -10,10 +10,6 @@ import mine from "./components/mine.vue";
 import register from "./components/register.vue";
 import phoneNubLogin from "./components/phoneNubLogin.vue";
 
-import Vue from "./libs/vue.js";
-import VueRouter from "./libs/vue-router.js";
-Vue.use(VueRouter);
-
 let router = new VueRouter();
 
 let App = Vue.extend({});
