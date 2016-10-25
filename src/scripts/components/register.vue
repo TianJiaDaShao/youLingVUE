@@ -2,7 +2,7 @@
   <div class="mine_main">
       <img :src="logo" class="logo">
       <h3 class="mine_label"><span>{{label}}</span></h3>
-      <input type="text" name="phone" value="">
+      <input type="text" name="phone" value="" id="register_nub">
       <div class="mine_bottom"></div>
       <div class="mine_register">{{register}}</div>
       <h3 class="phone_login"><span v-link="{path:phoneNubLoginPath}">{{phone_login}}</span></h3>
@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import commonUtil from "../utils/commonUtils";
     export default{
       data(){
         return{
@@ -35,6 +36,10 @@
           xieyi:'用户协议',
           phoneNubLoginPath:'/mine/phoneNubLogin'
         }
+      },
+
+      ready(){
+        commonUtil.focus('#register_nub');
       }
     }
 </script>

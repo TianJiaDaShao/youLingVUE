@@ -7,6 +7,7 @@ import danPin from "./components/danPin.vue";
 import danPinDetail from "./components/danPinDetail.vue";
 import zhangZiShi from "./components/zhangZiShi.vue";
 import zhangdetail from "./components/zhangdetail.vue";
+import tuiJianDetail from "./components/tuiJianDetail.vue";
 import mine from "./components/mine.vue";
 import register from "./components/register.vue";
 import phoneNubLogin from "./components/phoneNubLogin.vue";
@@ -49,6 +50,9 @@ router.map({
 
     '/zhangdetail': {
         component: zhangdetail
+    },
+    '/tuiJianDetail': {
+        component: tuiJianDetail
     }
 
 });
