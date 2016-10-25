@@ -6,21 +6,23 @@
                 <span>{{nav}}</span>
             </div>
         </nav>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <input type="text" name="name" value="手机号">
-              <input type="text" name="name" value="密码">
-            </div>
-            <div class="swiper-slide">
-              <input type="text" name="name" value="手机号">
-              <input type="text" name="name" value="密码1">
-            </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <input type="text" name="name" value="手机号">
+                <input type="text" name="name" value="密码">
+              </div>
+              <div class="swiper-slide">
+                <input type="text" name="name" value="手机号">
+                <input type="text" name="name" value="密码132">
+              </div>
+          </div>
         </div>
     </div>
 </template>
 
 <script>
-    var mySwiper = new Swiper('swiper-wrapper');
+    var mySwiper = null;
     export default{
       data(){
         return{
@@ -31,7 +33,12 @@
       },
 
       ready(){
-
+        var that = this;
+        mySwiper = new Swiper(".swiper-container", {
+            onSlideChangeStart: function(){
+              that.loginIndex = mySwiper.activeIndex;
+            }
+          });
       },
 
       methods:{

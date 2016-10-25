@@ -48,9 +48,12 @@
     }
 
     .swiper-wrapper{
+      width: 100%;
       padding-top: 5.29vh;
       padding-bottom: 3.2vh;
         .swiper-slide{
+            @include flexbox();
+            @include flex-direction(column);
             padding-left: 7.33vw;
             input{
               width: 83.33vw;
