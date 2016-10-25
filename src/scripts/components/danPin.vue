@@ -11,7 +11,7 @@
                     <div class="swiper-slide">
                         <section id="index-scroll1">
                             <ul>
-                                <li v-for="l in danPin">
+                                <li v-for="l in danPin" v-link="{path:'/danPinDetail', params: {id: l.id}}">
                                   <span>
                                     <i><img v-bind:src="l.img" alt=""></i>
                                     <b>{{l.title}}</b>
