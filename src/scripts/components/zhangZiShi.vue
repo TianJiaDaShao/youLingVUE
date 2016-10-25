@@ -10,8 +10,8 @@
                     <img v-bind:src="l.img" v-link="{path:'/zhangdetail'}">
                     <i v-link="{path:'/zhangdetail'}">{{l.title}}</i>
                     <p>{{l.detail}}</p>
-                    <b><span>涨姿势</span><span>{{l.type}}</span></b>
-                    <b><span>作者：领哥</span><span><img src="/images/md_view_xs.png" alt="">{{l.num}}</span><span>{{l.time}}</span></b>
+                    <b class="b1"><span>涨姿势</span><span>{{l.type}}</span></b>
+                    <b class="b2"><span>作者：领哥</span><span><img src="/images/md_view_xs.png" alt="">{{l.num}}</span><span>{{l.time}}</span></b>
                 </li>
             </ul>
         </section>
