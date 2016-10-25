@@ -4,12 +4,12 @@
     </div>
     <footer id="footer">
         <ul>
-          <li :class="cur == $index ? 'active' : ''"
+          <li :class="curIndex == $index ? 'active' : ''"
               @click="changPage($index)"
               v-for="tab in tablist"
               v-link="{path:tab.path}"
           >
-            <img v-if="cur == $index" :src="tab.activeIcon">
+            <img v-if="curIndex == $index" :src="tab.activeIcon">
             <img v-else :src="tab.icon">
             <b>{{tab.name}}</b>
           </li>
@@ -18,7 +18,17 @@
 </template>
 
 <script>
+  import {changeIndex} from '../vuex/actions';
+  import {getIndex} from '../vuex/getters';
   export default{
+    vuex: {
+      getters: {
+        curIndex:getIndex
+      },
+      actions: {
+        change: changeIndex
+      }
+    },
     data(){
       return {
         cur:0,
@@ -31,10 +41,9 @@
       }
     },
 
+    methods: {
+      changPage(i) {
 
-    methods:{
-      changPage(i){
-        this.cur=i;
       }
     }
   }
