@@ -20,13 +20,20 @@
     </div>
 </template>
 <script>
+    import {changeIndex} from "../vuex/actions";
     export default {
+        vuex: {
+          actions: {
+            change: changeIndex
+          }
+        },
         data() {
                 return {
                     list: []
                 }
             },
             ready: function() {
+                this.change(2);
                 var that = this;
                 this.$http.get('/mock/zhangZiShi.json')
                     .then((res) => {
@@ -40,7 +47,7 @@
             },
             methods:{
                 clc(){
-                    console.log(1)
+
                 }
             }
     }
