@@ -1,8 +1,16 @@
 $background:#fafafa;
+$baseColor: #0dc441;
 $icon:#61636b;
 $activeIcon:#007cd1;
 body{
+
+    .index-container{
+      overflow: hidden;
+      @include flex(1);
+      width: 100%;
+    }
     @include flexbox();
+    height:100%;
     @include flex-direction(column);
     @include justify-content(space-between);
 

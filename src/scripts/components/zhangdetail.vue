@@ -1,5 +1,6 @@
 <template>
     <div class="gesture_detail">
+        <div v-if="shareshow" class="yo-mask"></div>
         <header>
             <div>
                 <div>
@@ -68,9 +69,6 @@
     </div>
 </template>
 <script>
-    var Vue = require('../libs/vue.js');
-    var VueResource = require('../libs/vue-resource.js');
-    Vue.use(VueResource);
     export default {
         data() {
                 return {

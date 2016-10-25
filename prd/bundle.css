@@ -654,6 +654,7 @@ body {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -661,6 +662,13 @@ body {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between; }
+  body .index-container {
+    overflow: hidden;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: .1px;
+    width: 100%; }
   body .index-container {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -701,6 +709,195 @@ body {
 #firstPage_imgurl {
   width: 100%;
   height: 100%; }
+
+.mine_container {
+  background: url("/images/md_login_bg.jpg");
+  height: 100%;
+  padding-top: 2.4vh;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start; }
+  .mine_container .Xurl {
+    width: 4.16vw;
+    height: 4.16vw;
+    margin-left: 3.61vw; }
+  .mine_container .mine_main {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: .1px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 83.33vw;
+    margin: 0 auto;
+    margin-top: 6.73vh; }
+    .mine_container .mine_main .logo {
+      width: 43vw;
+      margin-bottom: 10.25vh; }
+    .mine_container .mine_main .mine_label {
+      width: 100%;
+      color: #fefefe;
+      font-size: 2.5vw; }
+    .mine_container .mine_main input {
+      width: 100%;
+      color: #fff;
+      background: rgba(255, 255, 255, 0);
+      border: 0; }
+    .mine_container .mine_main .mine_bottom {
+      width: 100%;
+      height: 0.24vh;
+      background: #fff;
+      margin-bottom: 3.36vh; }
+    .mine_container .mine_main .mine_register {
+      width: 100%;
+      height: 5.13vh;
+      background: #007cd1;
+      opacity: 0.7;
+      text-align: center;
+      line-height: 5.13vh;
+      color: #fff;
+      margin-bottom: 3.04vh; }
+    .mine_container .mine_main .phone_login {
+      width: 100%;
+      color: #fefefe;
+      font-size: 2.77vw;
+      height: 2.77vw;
+      line-height: 2.77vw;
+      margin-bottom: 6.25vh; }
+    .mine_container .mine_main .other_login {
+      font-size: 2.5vw;
+      color: #c2c2c3;
+      height: 2.5vw;
+      line-height: 2.5vw; }
+    .mine_container .mine_main .other_login_img img {
+      width: 10vw;
+      margin: 2.24vh 2.5vw; }
+    .mine_container .mine_main .xieyi {
+      font-size: 2.5vw;
+      color: #c2c2c3;
+      height: 2.5vw;
+      line-height: 2.5vw; }
+      .mine_container .mine_main .xieyi span {
+        color: #fefefe; }
+
+.phoneNubLogin_main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  width: .1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 83.33vw;
+  margin: 0 auto;
+  margin-top: 2.24vh; }
+  .phoneNubLogin_main .logo {
+    width: 43vw;
+    margin-bottom: 10.25vh; }
+
+.index-container {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  width: .1px;
+  width: 100vw;
+  overflow: hidden; }
+
+.tuijian-box {
+  width: 100vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .tuijian-box header {
+    width: 100vw;
+    height: 12vw;
+    background: #fff;
+    font-size: 20px;
+    text-indent: 4vw;
+    line-height: 12vw;
+    font-weight: bold;
+    color: #666; }
+  .tuijian-box section {
+    width: 100vw;
+    overflow: hidden;
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    .tuijian-box section ul {
+      height: 100%;
+      width: 92vw;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      align-items: center; }
+      .tuijian-box section ul li {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center; }
+        .tuijian-box section ul li img {
+          display: block;
+          width: 100%;
+          height: 51.56vw; }
+        .tuijian-box section ul li i {
+          width: 100%;
+          line-height: 8vw;
+          font-size: 6.5vw; }
+        .tuijian-box section ul li p {
+          width: 100%;
+          line-height: 5.5vw;
+          font-size: 4.5vw; }
+        .tuijian-box section ul li b.b1 {
+          height: 100px; }
 
 body > div {
   height: 100%;
@@ -783,7 +980,9 @@ body > div {
     .danPin-container > section .swiper-container {
       height: 100%; }
       .danPin-container > section .swiper-container .swiper-wrapper {
-        height: 100%; }
+        height: 100%;
+        display: flex;
+        flex-direction: row; }
         .danPin-container > section .swiper-container .swiper-wrapper .swiper-slide {
           height: 100%; }
       .danPin-container > section .swiper-container section {
@@ -879,93 +1078,6 @@ body > div {
                 font-size: 14px;
                 font-weight: bold;
                 padding: 0 0.05rem 0.05rem 0; }
-
-.mine_container {
-  background: url("/images/md_login_bg.jpg");
-  height: 100%;
-  padding-top: 2.4vh;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start; }
-  .mine_container .Xurl {
-    width: 4.16vw;
-    height: 4.16vw;
-    margin-left: 3.61vw;
-    margin-bottom: 6.73vh; }
-  .mine_container .mine_main {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-    width: .1px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    width: 83.33vw;
-    margin: 0 auto; }
-    .mine_container .mine_main .logo {
-      width: 43vw;
-      margin-bottom: 10.25vh; }
-    .mine_container .mine_main .mine_label {
-      width: 100%;
-      color: #fefefe;
-      font-size: 2.5vw; }
-    .mine_container .mine_main input {
-      width: 100%;
-      color: #fff;
-      background: rgba(255, 255, 255, 0);
-      border: 0; }
-    .mine_container .mine_main .mine_bottom {
-      width: 100%;
-      height: 0.24vh;
-      background: #fff;
-      margin-bottom: 3.36vh; }
-    .mine_container .mine_main .mine_register {
-      width: 100%;
-      height: 5.13vh;
-      background: #007cd1;
-      opacity: 0.7;
-      text-align: center;
-      line-height: 5.13vh;
-      color: #fff;
-      margin-bottom: 3.04vh; }
-    .mine_container .mine_main .phone_login {
-      width: 100%;
-      color: #fefefe;
-      font-size: 2.77vw;
-      height: 2.77vw;
-      line-height: 2.77vw;
-      margin-bottom: 6.25vh; }
-    .mine_container .mine_main .other_login {
-      font-size: 2.5vw;
-      color: #c2c2c3;
-      height: 2.5vw;
-      line-height: 2.5vw; }
-    .mine_container .mine_main .other_login_img img {
-      width: 10vw;
-      margin: 2.24vh 2.5vw; }
-    .mine_container .mine_main .xieyi {
-      font-size: 2.5vw;
-      color: #c2c2c3;
-      height: 2.5vw;
-      line-height: 2.5vw; }
-      .mine_container .mine_main .xieyi span {
-        color: #fefefe; }
 
 .index-container {
   -webkit-box-flex: 1;

@@ -13,7 +13,6 @@ $mine_icon:#fefefe;
       width: 4.16vw;
       height: 4.16vw;
       margin-left: 3.61vw;
-      margin-bottom: 6.73vh;
     }
 
     .mine_main{
@@ -23,6 +22,8 @@ $mine_icon:#fefefe;
       @include align-items(center);
       width: 83.33vw;
       margin: 0 auto;
+      margin-top: 6.73vh;
+
 
       .logo{
         width: 43vw;
