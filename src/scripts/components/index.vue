@@ -30,7 +30,6 @@
     },
     data(){
       return {
-        cur:0,
         tablist:[
           {path:'/index/',icon:'./images/md_tabbar_featured.png',acticeIcon:'./images/md_tabbar_featured_on.png',name:'推荐'},
           {path:'/index/danPin',icon:'./images/md_tabbar_singleitem.png',activeIcon:'./images/md_tabbar_singleitem_on.png',name:'单品'},
