@@ -19,18 +19,23 @@
     </div>
 </template>
 <script>
+    import {changeIndex} from "../vuex/actions";
     export default {
-
+        vuex: {
+          actions: {
+            change: changeIndex
+          }
+        },
         data() {
                 return {
                     list: []
                 }
             },
             ready: function() {
+                this.change(0);
                 var that = this;
                 this.$http.get('/mock/tuiJian.json')
                     .then((res) => {
-                        console.log(res.data.data.length);
                         this.list = res.data.data;
                         setTimeout(function() {
                             new IScroll('#index-scroll', {

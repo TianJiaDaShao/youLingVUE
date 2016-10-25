@@ -6,11 +6,20 @@
 </template>
 
 <script>
-    export default{
+    import {changeIndex} from "../vuex/actions";
+    export default {
+        vuex: {
+          actions: {
+            change: changeIndex
+          }
+        },
       data(){
         return{
           Xurl:'/images/md_nav_close_white.png'
         }
+      },
+      ready: function() {
+          this.change(3);
       }
     }
 </script>
