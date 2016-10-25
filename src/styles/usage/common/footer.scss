@@ -2,6 +2,16 @@ $background:#fafafa;
 $baseColor: #0dc441;
 $icon:#61636b;
 $activeIcon:#007cd1;
+$phoneNubLogin:#c2c2c3;
+$mine_icon:#fefefe;
+@mixin middle{
+  @include flex(1);
+  @include flexbox();
+  @include flex-direction(column);
+  @include align-items(center);
+  width: 83.33vw;
+  margin: 0 auto;
+}
 body{
 
     .index-container{

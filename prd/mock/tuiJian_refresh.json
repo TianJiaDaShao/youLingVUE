@@ -1,0 +1,27 @@
+{
+    "data": [{
+      "id":1,
+      "shops":[{
+        "img":"http://img4.tbcdn.cn/tfscom/i3/TB1AgBKHFXXXXbgXXXXXXXXXXXX_!!0-item_pic.jpg",
+        "title": "bangboy爆款百搭特价百搭纯色休闲简约宽松棉质圆领T恤潮男女款",
+        "price":35.00
+        },{
+          "img":"http://img3.tbcdn.cn/tfscom/i3/TB1gUuqJFXXXXXiXVXXXXXXXXXX_!!0-item_pic.jpg",
+          "title": "bangboy秋款港风韩版直筒口袋不包边设计纯黑松紧长裤潮男",
+          "price":118.00
+          }],
+        "avatar_img":"http://img1.uullnn.com/2016/06/29/2016062910500067678hAs.jpg",
+        "avatar_name":"A  jodi --refresh"
+    },
+    {
+      "id":2,
+      "shops":[{
+        "img":"http://img1.tbcdn.cn/tfscom/i4/TB1QNYiJVXXXXc8XpXXXXXXXXXX_!!0-item_pic.jpg",
+        "title": "YESMAN原创设计男装秋装新品男士休闲纯色九分裤青年工装裤男潮",
+        "price":35.00
+        }],
+        "avatar_img":"http://img1.uullnn.com/2016/06/29/20160629104959417891L2.jpg",
+        "avatar_name":"搬德斯鸠--refresh"
+    }
+  ]
+}

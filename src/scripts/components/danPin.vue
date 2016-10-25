@@ -134,7 +134,13 @@
 <script>
     var mySwiper = null;
 
+    import {changeIndex} from "../vuex/actions";
     export default {
+        vuex: {
+          actions: {
+            change: changeIndex
+          }
+        },
         data() {
                 return {
                     danPin: [],
@@ -143,6 +149,7 @@
                 }
             },
             ready: function() {
+                this.change(1);
                 var that = this;
                 this.$http.get('/mock/danPin.json')
                     .then((res) => {
