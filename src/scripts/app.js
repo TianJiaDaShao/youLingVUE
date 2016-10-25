@@ -1,5 +1,9 @@
 import "../styles/usage/page/app.scss";
+import commonUtil from "./utils/commonUtils";
+// 自定义scroll指令
+commonUtil.dirScroll();
 
+// pages
 import firstPage from "./components/firstPage.vue";
 import index from "./components/index.vue";
 import tuiJian from "./components/tuiJian.vue";
