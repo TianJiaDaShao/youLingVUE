@@ -650,6 +650,10 @@ a {
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle; }
 
+#firstPage_imgurl {
+  width: 100%;
+  height: 100%; }
+
 body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -706,120 +710,8 @@ body {
           width: 24px;
           height: 24px; }
 
-#firstPage_imgurl {
-  width: 100%;
-  height: 100%; }
-
-.mine_container {
-  background: url("/images/md_login_bg.jpg");
-  height: 100%;
-  padding-top: 2.4vh;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start; }
-  .mine_container .Xurl {
-    width: 4.16vw;
-    height: 4.16vw;
-    margin-left: 3.61vw; }
-  .mine_container .mine_main {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-    width: .1px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    width: 83.33vw;
-    margin: 0 auto;
-    margin-top: 6.73vh; }
-    .mine_container .mine_main .logo {
-      width: 43vw;
-      margin-bottom: 10.25vh; }
-    .mine_container .mine_main .mine_label {
-      width: 100%;
-      color: #fefefe;
-      font-size: 2.5vw; }
-    .mine_container .mine_main input {
-      width: 100%;
-      color: #fff;
-      background: rgba(255, 255, 255, 0);
-      border: 0; }
-    .mine_container .mine_main .mine_bottom {
-      width: 100%;
-      height: 0.24vh;
-      background: #fff;
-      margin-bottom: 3.36vh; }
-    .mine_container .mine_main .mine_register {
-      width: 100%;
-      height: 5.13vh;
-      background: #007cd1;
-      opacity: 0.7;
-      text-align: center;
-      line-height: 5.13vh;
-      color: #fff;
-      margin-bottom: 3.04vh; }
-    .mine_container .mine_main .phone_login {
-      width: 100%;
-      color: #fefefe;
-      font-size: 2.77vw;
-      height: 2.77vw;
-      line-height: 2.77vw;
-      margin-bottom: 6.25vh; }
-    .mine_container .mine_main .other_login {
-      font-size: 2.5vw;
-      color: #c2c2c3;
-      height: 2.5vw;
-      line-height: 2.5vw; }
-    .mine_container .mine_main .other_login_img img {
-      width: 10vw;
-      margin: 2.24vh 2.5vw; }
-    .mine_container .mine_main .xieyi {
-      font-size: 2.5vw;
-      color: #c2c2c3;
-      height: 2.5vw;
-      line-height: 2.5vw; }
-      .mine_container .mine_main .xieyi span {
-        color: #fefefe; }
-
-.phoneNubLogin_main {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  flex: 1;
-  width: .1px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  width: 83.33vw;
-  margin: 0 auto;
-  margin-top: 2.24vh; }
-  .phoneNubLogin_main .logo {
-    width: 43vw;
-    margin-bottom: 10.25vh; }
-
 .index-container {
+  background-color: #fff;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   flex: 1;
@@ -840,25 +732,51 @@ body {
   -webkit-box-align: center;
   -webkit-align-items: center;
   align-items: center; }
-  .tuijian-box header {
+  .tuijian-box .hhh {
     width: 100vw;
     height: 12vw;
-    background: #fff;
+    background-color: #ccc;
     font-size: 20px;
     text-indent: 4vw;
     line-height: 12vw;
     font-weight: bold;
     color: #666; }
   .tuijian-box section {
-    width: 100vw;
     overflow: hidden;
-    padding-top: 10px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center; }
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 4px; }
+    .tuijian-box section .head {
+      text-align: center;
+      height: 0.35rem;
+      line-height: 0.35rem; }
+      .tuijian-box section .head.hide {
+        display: none; }
+    .tuijian-box section .head img {
+      width: 0.16rem;
+      display: inline-block;
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      transition: transform 150ms;
+      -webkit-transition: transform 150ms; }
+    .tuijian-box section .up {
+      transform: rotate(360deg) !important;
+      -webkit-transform: rotate(360deg) !important; }
+    .tuijian-box section .foot {
+      text-align: center;
+      height: 0.35rem;
+      line-height: 0.35rem; }
+    .tuijian-box section .foot img {
+      display: inline-block;
+      width: 0.16rem;
+      /*transform: rotate(0deg);*/
+      /*-webkit-transform: rotate(0deg);*/
+      transition: transform 150ms;
+      -webkit-transition: transform 150ms; }
+    .tuijian-box section .down {
+      transform: rotate(180deg) !important;
+      -webkit-transform: rotate(180deg) !important; }
     .tuijian-box section ul {
       height: 100%;
       width: 92vw;
@@ -873,6 +791,7 @@ body {
       -webkit-align-items: center;
       align-items: center; }
       .tuijian-box section ul li {
+        background-color: #fff;
         width: 100%;
         display: -webkit-box;
         display: -webkit-flex;
@@ -880,24 +799,27 @@ body {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        align-items: center; }
-        .tuijian-box section ul li img {
-          display: block;
+        flex-direction: column; }
+        .tuijian-box section ul li .shops {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: flex;
+          flex-wrap: nowrap;
           width: 100%;
-          height: 51.56vw; }
-        .tuijian-box section ul li i {
-          width: 100%;
+          height: 65vw; }
+          .tuijian-box section ul li .shops img {
+            width: 100%;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            flex: 1;
+            width: .1px;
+            display: inline-block; }
+        .tuijian-box section ul li .avatar img {
+          width: 12vw;
+          height: 12vw; }
+        .tuijian-box section ul li .avatar i {
           line-height: 8vw;
           font-size: 6.5vw; }
-        .tuijian-box section ul li p {
-          width: 100%;
-          line-height: 5.5vw;
-          font-size: 4.5vw; }
-        .tuijian-box section ul li b.b1 {
-          height: 100px; }
 
 body > div {
   height: 100%;
@@ -1088,6 +1010,7 @@ body > div {
   overflow: hidden; }
 
 .gesture {
+  background: #fff;
   width: 100vw;
   height: 100%;
   display: -webkit-box;
@@ -1170,7 +1093,7 @@ body > div {
           .gesture section ul li b.b1 span {
             height: 100%;
             line-height: 100%;
-            background: #c5c8d0;
+            background: #dadfda;
             display: block;
             border-radius: 2vw;
             padding: 0 4px; }
@@ -1209,6 +1132,27 @@ body > div {
             width: 120px;
             text-align: center; }
 
+/**
+ * @module fragment
+ * @method yo-mask
+ * @version 3.0.0
+ * @description 构造yo-mask的自定义使用方法
+ * @demo http://doyoe.github.io/Yo/demo/fragment/yo-mask.html
+ * @param {String} $name 定义扩展名称 <3.0.0>
+ * @param {Color} $bgcolor 背景色 <3.0.0>
+ */
+.yo-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.2); }
+
+/**
+ * yo-mask扩展
+ */
 .gesture_detail {
   height: 100%;
   width: 100%;
@@ -1257,7 +1201,7 @@ body > div {
         height: 18px; }
   .gesture_detail #share {
     width: 100%;
-    z-index: 2;
+    z-index: 99999;
     background: #fff;
     position: fixed;
     left: 0;
@@ -1307,14 +1251,17 @@ body > div {
         flex-direction: column;
         -webkit-box-align: center;
         -webkit-align-items: center;
-        align-items: center; }
+        align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between; }
         .gesture_detail #share ul li img {
           width: 15vw;
           height: 15vw; }
         .gesture_detail #share ul li p {
           font-size: 4vw;
-          height: 7vw;
-          line-height: 7vw; }
+          height: 4vw;
+          line-height: 4vw; }
   .gesture_detail section {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -1415,5 +1362,293 @@ body > div {
         height: 120vw; }
       .gesture_detail section .detail b {
         font-weight: bold; }
+
+.mine_container {
+  background: url("/images/md_login_bg.jpg");
+  height: 100%;
+  padding-top: 2.4vh;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start; }
+  .mine_container .Xurl {
+    width: 4.16vw;
+    height: 4.16vw;
+    margin-left: 3.61vw; }
+
+.mine_main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  width: .1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 83.33vw;
+  margin: 0 auto;
+  margin-top: 6.73vh; }
+  .mine_main .logo {
+    width: 43vw;
+    margin-bottom: 10.25vh; }
+  .mine_main .mine_label {
+    width: 100%;
+    color: #fefefe;
+    font-size: 2.5vw; }
+  .mine_main input {
+    width: 100%;
+    color: #fff;
+    background: rgba(255, 255, 255, 0);
+    border: 0; }
+  .mine_main .mine_bottom {
+    width: 100%;
+    height: 0.24vh;
+    background: #fff;
+    margin-bottom: 3.36vh; }
+  .mine_main .mine_register {
+    width: 100%;
+    height: 5.13vh;
+    background: #007cd1;
+    opacity: 0.7;
+    text-align: center;
+    line-height: 5.13vh;
+    color: #fff;
+    margin-bottom: 3.04vh; }
+  .mine_main .phone_login {
+    width: 100%;
+    color: #fefefe;
+    font-size: 2.77vw;
+    height: 2.77vw;
+    line-height: 2.77vw;
+    margin-bottom: 6.25vh; }
+  .mine_main .other_login {
+    font-size: 2.5vw;
+    color: #c2c2c3;
+    height: 2.5vw;
+    line-height: 2.5vw; }
+  .mine_main .other_login_img img {
+    width: 10vw;
+    margin: 2.24vh 2.5vw; }
+  .mine_main .xieyi {
+    font-size: 2.5vw;
+    color: #c2c2c3;
+    height: 2.5vw;
+    line-height: 2.5vw; }
+    .mine_main .xieyi span {
+      color: #fefefe; }
+
+.phoneNubLogin_main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  width: .1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2.24vh; }
+  .phoneNubLogin_main .logo {
+    width: 43vw;
+    margin-bottom: 5.77vh; }
+  .phoneNubLogin_main nav {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    font-size: 2.77vw;
+    color: #c2c2c3;
+    text-align: center;
+    display: flex; }
+    .phoneNubLogin_main nav div {
+      width: 50%;
+      height: 4vh;
+      position: relative; }
+      .phoneNubLogin_main nav div::after {
+        pointer-events: none;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        content: " ";
+        border-color: #c2c2c3;
+        border-style: solid;
+        border-width: 0 0 1px 0;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0; }
+        @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+          .phoneNubLogin_main nav div::after {
+            width: 100%;
+            height: 100%; } }
+        @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+          .phoneNubLogin_main nav div::after {
+            width: 200%;
+            height: 200%;
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5); } }
+        @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+          .phoneNubLogin_main nav div::after {
+            width: 300%;
+            height: 300%;
+            -webkit-transform: scale(0.33333);
+            transform: scale(0.33333); } }
+      .phoneNubLogin_main nav div span {
+        display: block;
+        width: 100%;
+        height: 2.4vh;
+        line-height: 2.4vh;
+        margin-bottom: 1.44vh; }
+      .phoneNubLogin_main nav div:first-child span {
+        position: relative; }
+        .phoneNubLogin_main nav div:first-child span::after {
+          pointer-events: none;
+          position: absolute;
+          z-index: 999;
+          top: 0;
+          left: 0;
+          overflow: hidden;
+          content: " ";
+          border-color: #c2c2c3;
+          border-style: solid;
+          border-width: 0 1px 0 0;
+          -webkit-transform-origin: 0 0;
+          transform-origin: 0 0; }
+          @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+            .phoneNubLogin_main nav div:first-child span::after {
+              width: 100%;
+              height: 100%; } }
+          @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+            .phoneNubLogin_main nav div:first-child span::after {
+              width: 200%;
+              height: 200%;
+              -webkit-transform: scale(0.5);
+              transform: scale(0.5); } }
+          @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+            .phoneNubLogin_main nav div:first-child span::after {
+              width: 300%;
+              height: 300%;
+              -webkit-transform: scale(0.33333);
+              transform: scale(0.33333); } }
+    .phoneNubLogin_main nav .navLoginActive {
+      position: relative;
+      color: #fff; }
+      .phoneNubLogin_main nav .navLoginActive::after {
+        pointer-events: none;
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        content: " ";
+        border-color: #fff;
+        border-style: solid;
+        border-width: 0 0 4px 0;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0; }
+        @media (max--moz-device-pixel-ratio: 1.49), (-webkit-max-device-pixel-ratio: 1.49), (max-device-pixel-ratio: 1.49), (max-resolution: 143dpi), (max-resolution: 1.49dppx) {
+          .phoneNubLogin_main nav .navLoginActive::after {
+            width: 100%;
+            height: 100%; } }
+        @media (min--moz-device-pixel-ratio: 1.5) and (max--moz-device-pixel-ratio: 2.49), (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-max-device-pixel-ratio: 2.49), (min-device-pixel-ratio: 1.5) and (max-device-pixel-ratio: 2.49), (min-resolution: 144dpi) and (max-resolution: 239dpi), (min-resolution: 1.5dppx) and (max-resolution: 2.49dppx) {
+          .phoneNubLogin_main nav .navLoginActive::after {
+            width: 200%;
+            height: 200%;
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5); } }
+        @media (min--moz-device-pixel-ratio: 2.5), (-webkit-min-device-pixel-ratio: 2.5), (min-device-pixel-ratio: 2.5), (min-resolution: 240dpi), (min-resolution: 2.5dppx) {
+          .phoneNubLogin_main nav .navLoginActive::after {
+            width: 300%;
+            height: 300%;
+            -webkit-transform: scale(0.33333);
+            transform: scale(0.33333); } }
+  .phoneNubLogin_main .swiper-wrapper {
+    width: 100%;
+    padding-top: 5.29vh;
+    padding-bottom: 3.2vh; }
+    .phoneNubLogin_main .swiper-wrapper .swiper-slide {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      padding-left: 7.33vw; }
+      .phoneNubLogin_main .swiper-wrapper .swiper-slide input {
+        width: 83.33vw;
+        font-size: 3.33vw;
+        height: 5.55vw;
+        background: rgba(255, 255, 255, 0);
+        color: #c2c2c3;
+        border: 0;
+        border-bottom: 1px solid #c2c2c3; }
+        .phoneNubLogin_main .swiper-wrapper .swiper-slide input:first-child {
+          margin-bottom: 3.04vh; }
+  .phoneNubLogin_main .phoneNubLogin_bt {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: .1px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 83.33vw;
+    margin: 0 auto; }
+    .phoneNubLogin_main .phoneNubLogin_bt .login_button {
+      width: 100%;
+      height: 5.13vh;
+      background: #007cd1;
+      opacity: 0.7;
+      text-align: center;
+      line-height: 5.13vh;
+      color: #fff;
+      margin-bottom: 3.04vh; }
+    .phoneNubLogin_main .phoneNubLogin_bt .register {
+      width: 100%;
+      color: #fefefe;
+      font-size: 2.77vw;
+      height: 2.77vw;
+      line-height: 2.77vw;
+      margin-bottom: 6.25vh; }
+    .phoneNubLogin_main .phoneNubLogin_bt .other_login {
+      font-size: 2.5vw;
+      color: #c2c2c3;
+      height: 2.5vw;
+      line-height: 2.5vw; }
+    .phoneNubLogin_main .phoneNubLogin_bt .other_login_img img {
+      width: 10vw;
+      margin: 2.24vh 2.5vw; }
 
 /*# sourceMappingURL=bundle.css.map*/
