@@ -5,7 +5,6 @@
     <footer id="footer">
         <ul>
           <li :class="curIndex == $index ? 'active' : ''"
-              @click="changPage($index)"
               v-for="tab in tablist"
               v-link="{path:tab.path}"
           >
@@ -31,19 +30,12 @@
     },
     data(){
       return {
-        cur:0,
         tablist:[
           {path:'/index/',icon:'./images/md_tabbar_featured.png',acticeIcon:'./images/md_tabbar_featured_on.png',name:'推荐'},
           {path:'/index/danPin',icon:'./images/md_tabbar_singleitem.png',activeIcon:'./images/md_tabbar_singleitem_on.png',name:'单品'},
           {path:'/index/zhangZiShi',icon:'./images/md_tabbar_aritcles.png',activeIcon:'./images/md_tabbar_aritcles_on.png',name:'涨姿势'},
           {path:'/mine',icon:'./images/md_tabbar_mine.png',activeIcon:'./images/md_tabbar_mine_on.png',name:'我的'}
         ]
-      }
-    },
-
-    methods: {
-      changPage(i) {
-
       }
     }
   }
