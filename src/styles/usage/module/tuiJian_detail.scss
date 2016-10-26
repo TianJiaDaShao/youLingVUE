@@ -1,0 +1,25 @@
+.tuijian-detail {
+  @include flexbox();
+  @include flex-direction(column);
+  header .title {
+    color: #fff;
+    font-size: .18rem;
+    @include ellipsis();
+    text-align: left;
+  }
+  article {
+    @include flex();
+    width: 100%;
+    overflow: hidden;
+    > div {
+      @include box-sizing(border-box);
+      padding: .1rem;
+      p {
+        margin-top: .1rem;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
