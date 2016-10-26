@@ -821,6 +821,37 @@ body {
           line-height: 8vw;
           font-size: 6.5vw; }
 
+.tuijian-detail {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+  .tuijian-detail header .title {
+    color: #fff;
+    font-size: .18rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left; }
+  .tuijian-detail article {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: .1px;
+    width: 100%;
+    overflow: hidden; }
+    .tuijian-detail article > div {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: .1rem; }
+      .tuijian-detail article > div p {
+        margin-top: .1rem; }
+      .tuijian-detail article > div img {
+        width: 100%; }
+
 body > div {
   height: 100%;
   display: -webkit-box;
