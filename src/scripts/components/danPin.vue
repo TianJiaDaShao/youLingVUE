@@ -34,7 +34,7 @@
                     <div class="swiper-slide">
                         <section id="index-scroll2">
                             <ul>
-                                <li v-for="l in danPin">
+                                <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
                                   <span>
                                     <i><img v-bind:src="l.img" alt=""></i>
                                     <b>{{l.title}}</b>
@@ -47,7 +47,7 @@
                     <div class="swiper-slide">
                         <section id="index-scroll3">
                             <ul>
-                                <li v-for="l in danPin">
+                                <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
                                   <span>
                                     <i><img v-bind:src="l.img" alt=""></i>
                                     <b>{{l.title}}</b>
@@ -60,7 +60,7 @@
                     <div class="swiper-slide">
                         <section id="index-scroll4">
                             <ul>
-                                <li v-for="l in danPin">
+                                <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
                                   <span>
                                     <i><img v-bind:src="l.img" alt=""></i>
                                     <b>{{l.title}}</b>
@@ -73,7 +73,7 @@
                     <div class="swiper-slide">
                         <section id="index-scroll5">
                             <ul>
-                                <li v-for="l in danPin">
+                                <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
                                   <span>
                                     <i><img v-bind:src="l.img" alt=""></i>
                                     <b>{{l.title}}</b>
@@ -86,7 +86,7 @@
                     <div class="swiper-slide">
                         <section id="index-scroll6">
                             <ul>
-                                <li v-for="l in danPin">
+                                <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
                                   <span>
                                     <i><img v-bind:src="l.img" alt=""></i>
                                     <b>{{l.title}}</b>
@@ -99,7 +99,7 @@
                     <div class="swiper-slide">
                         <section id="index-scroll7">
                             <ul>
-                                <li v-for="l in danPin">
+                                <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
                                   <span>
                                     <i><img v-bind:src="l.img" alt=""></i>
                                     <b>{{l.title}}</b>
@@ -112,7 +112,7 @@
                     <div class="swiper-slide">
                         <section id="index-scroll8">
                             <ul>
-                                <li v-for="l in danPin">
+                                <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
                                   <span>
                                     <i><img v-bind:src="l.img" alt=""></i>
                                     <b>{{l.title}}</b>
@@ -125,7 +125,7 @@
                     <div class="swiper-slide">
                         <section id="index-scroll9">
                             <ul>
-                                <li v-for="l in danPin">
+                                <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
                                   <span>
                                     <i><img v-bind:src="l.img" alt=""></i>
                                     <b>{{l.title}}</b>
