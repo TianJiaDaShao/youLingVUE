@@ -10,16 +10,16 @@
           <span>下拉刷新...</span>
         </div>
         <ul>
-          <li v-for="l in list" @click="clc" v-link="{path:'/tuiJianDetail'}">
-            <div class="shops">
-              <img v-for="limg in l.shops" v-bind:src="limg.img">
-            </div>
-            <div class="avatar">
-              <img v-bind:src="l.avatar_img" alt="">
-              <i>{{l.avatar_name}}</i>
-            </div>
-          </li>
-        </ul>
+        <li v-for="l in list" @click="clc" v-link="{name: 'tuiJianDetail', params: {id: l.id}}">
+          <div class="shops">
+            <img v-for="limg in l.shops" v-bind:src="limg.img">
+          </div>
+          <div class="avatar">
+            <img v-bind:src="l.avatar_img" alt="">
+            <i>{{l.avatar_name}}</i>
+          </div>
+        </li>
+      </ul>
         <div class="foot">
           <img v-bind:src="imgArrow" />
           <span>上拉加载更多...</span>
@@ -30,7 +30,13 @@
 </template>
 <script>
   import commonUtil from "../utils/commonUtils";
+  import {changeIndex} from "../vuex/actions";
   export default {
+      vuex: {
+        actions: {
+          change: changeIndex
+        }
+      },
     data() {
         return {
           list: [],
@@ -38,6 +44,7 @@
         }
       },
       ready: function() {
+        this.change(0);
         var that = this;
         this.$http.get('/mock/tuiJian.json')
           .then((res) => {

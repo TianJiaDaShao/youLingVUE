@@ -58,7 +58,8 @@ router.map({
     '/zhangdetail': {
         component: zhangdetail
     },
-    '/tuiJianDetail': {
+    '/tuiJianDetail/:id': {
+        name: 'tuiJianDetail',
         component: tuiJianDetail
     },
     '/danPinDetail': {
