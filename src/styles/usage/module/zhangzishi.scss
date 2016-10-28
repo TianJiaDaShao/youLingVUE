@@ -20,6 +20,7 @@
         line-height: 12vw;
         font-weight: bold;
         color: #666;
+        border-bottom: 1px solid #aaa;
     }
     section{
         width: 100vw;
@@ -33,6 +34,26 @@
             @include flexbox();
             @include flex-direction(column);
             @include align-items(center);
+            .foot {
+                text-align: center;
+                height: 0.35rem;
+                line-height: 0.35rem;
+            }
+
+            .foot img {
+                display: inline-block;
+                width: 0.16rem;
+                /*transform: rotate(0deg);*/
+                /*-webkit-transform: rotate(0deg);*/
+                transition: transform 150ms;
+                -webkit-transition: transform 150ms;
+            }
+
+            .down {
+                transform: rotate(180deg) !important;
+                -webkit-transform: rotate(180deg) !important;
+            }
+
             li{
                 width: 100%;
                 @include flexbox();
