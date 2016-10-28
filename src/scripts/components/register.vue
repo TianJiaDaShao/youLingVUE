@@ -29,9 +29,9 @@ import commonUtil from "../utils/commonUtils";
           other_login:'其他登录方式',
           phoneNub:'',
           other:[
-            {other_login_img:'/images/btn_login_wechat_n.png'},
-            {other_login_img:'/images/btn_login_taobao_n.png'},
-            {other_login_img:'/images/btn_login_weibo_n.png'}
+            {other_login_img:'http://ofot6413t.bkt.clouddn.com/btn_login_wechat_n.png'},
+            {other_login_img:'http://ofot6413t.bkt.clouddn.com/btn_login_taobao_n.png'},
+            {other_login_img:'http://ofot6413t.bkt.clouddn.com/btn_login_weibo_n.png'}
           ],
           tongyi:'注册代表同意',
           xieyi:'用户协议',

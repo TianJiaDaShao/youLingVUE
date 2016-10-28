@@ -15,7 +15,7 @@
         },
       data(){
         return{
-          Xurl:'/images/md_nav_close_white.png'
+          Xurl:'http://ofot6413t.bkt.clouddn.com/md_nav_close_white.png'
         }
       },
       ready: function() {

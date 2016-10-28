@@ -6,11 +6,11 @@
     export default{
       data(){
         return{
-          imgurl:'./images/md_splash.jpg'
+          imgurl:'http://ofot6413t.bkt.clouddn.com/md_splash.jpg'
         }
       },
       ready(){
-        
+
       }
     }
 </script>

@@ -271,7 +271,7 @@
 	exports.default = {
 	  data: function data() {
 	    return {
-	      imgurl: './images/md_splash.jpg'
+	      imgurl: 'http://ofot6413t.bkt.clouddn.com/md_splash.jpg'
 	    };
 	  },
 	  ready: function ready() {}
@@ -358,7 +358,7 @@
 	  },
 	  data: function data() {
 	    return {
-	      tablist: [{ path: '/index/', icon: './images/md_tabbar_featured.png', acticeIcon: './images/md_tabbar_featured_on.png', name: '推荐' }, { path: '/index/danPin', icon: './images/md_tabbar_singleitem.png', activeIcon: './images/md_tabbar_singleitem_on.png', name: '单品' }, { path: '/index/zhangZiShi', icon: './images/md_tabbar_aritcles.png', activeIcon: './images/md_tabbar_aritcles_on.png', name: '涨姿势' }, { path: '/mine', icon: './images/md_tabbar_mine.png', activeIcon: './images/md_tabbar_mine_on.png', name: '我的' }]
+	      tablist: [{ path: '/index/', icon: 'http://ofot6413t.bkt.clouddn.com/md_tabbar_featured.png', acticeIcon: 'http://ofot6413t.bkt.clouddn.com/md_tabbar_featured_on.png', name: '推荐' }, { path: '/index/danPin', icon: 'http://ofot6413t.bkt.clouddn.com/md_tabbar_singleitem.png', activeIcon: 'http://ofot6413t.bkt.clouddn.com/md_tabbar_singleitem_on.png', name: '单品' }, { path: '/index/zhangZiShi', icon: 'http://ofot6413t.bkt.clouddn.com/md_tabbar_aritcles.png', activeIcon: 'http://ofot6413t.bkt.clouddn.com/md_tabbar_aritcles_on.png', name: '涨姿势' }, { path: '/mine', icon: 'http://ofot6413t.bkt.clouddn.com/md_tabbar_mine.png', activeIcon: 'http://ofot6413t.bkt.clouddn.com/md_tabbar_mine_on.png', name: '我的' }]
 	    };
 	  }
 	};
@@ -1209,7 +1209,7 @@
 	  },
 	  data: function data() {
 	    return {
-	      Xurl: '/images/md_nav_close_white.png'
+	      Xurl: 'http://ofot6413t.bkt.clouddn.com/md_nav_close_white.png'
 	    };
 	  },
 	
@@ -1288,7 +1288,7 @@
 	      phone_login: '手机号登录',
 	      other_login: '其他登录方式',
 	      phoneNub: '',
-	      other: [{ other_login_img: '/images/btn_login_wechat_n.png' }, { other_login_img: '/images/btn_login_taobao_n.png' }, { other_login_img: '/images/btn_login_weibo_n.png' }],
+	      other: [{ other_login_img: 'http://ofot6413t.bkt.clouddn.com/btn_login_wechat_n.png' }, { other_login_img: 'http://ofot6413t.bkt.clouddn.com/btn_login_taobao_n.png' }, { other_login_img: 'http://ofot6413t.bkt.clouddn.com/btn_login_weibo_n.png' }],
 	      tongyi: '注册代表同意',
 	      xieyi: '用户协议',
 	      phoneNubLoginPath: '/mine/phoneNubLogin'
@@ -1413,7 +1413,7 @@
 	      login: '登录',
 	      register: '注册',
 	      other_login: '其他登录方式',
-	      other: [{ other_login_img: '/images/btn_login_wechat_n.png' }, { other_login_img: '/images/btn_login_taobao_n.png' }, { other_login_img: '/images/btn_login_weibo_n.png' }],
+	      other: [{ other_login_img: 'http://ofot6413t.bkt.clouddn.com/btn_login_wechat_n.png' }, { other_login_img: 'http://ofot6413t.bkt.clouddn.com/btn_login_taobao_n.png' }, { other_login_img: 'http://ofot6413t.bkt.clouddn.com/btn_login_weibo_n.png' }],
 	      loginNav: ['密码登录', "验证码登录"],
 	      registerPath: './'
 	    };

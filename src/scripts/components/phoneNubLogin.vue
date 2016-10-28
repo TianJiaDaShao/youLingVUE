@@ -40,9 +40,9 @@
           register:'注册',
           other_login:'其他登录方式',
           other:[
-            {other_login_img:'/images/btn_login_wechat_n.png'},
-            {other_login_img:'/images/btn_login_taobao_n.png'},
-            {other_login_img:'/images/btn_login_weibo_n.png'}
+            {other_login_img:'http://ofot6413t.bkt.clouddn.com/btn_login_wechat_n.png'},
+            {other_login_img:'http://ofot6413t.bkt.clouddn.com/btn_login_taobao_n.png'},
+            {other_login_img:'http://ofot6413t.bkt.clouddn.com/btn_login_weibo_n.png'}
           ],
           loginNav:['密码登录',"验证码登录"],
           registerPath:'./'
