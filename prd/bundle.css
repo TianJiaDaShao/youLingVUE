@@ -1514,7 +1514,7 @@ body > div {
 .mine_container {
   background: url("/images/md_login_bg.jpg");
   height: 100%;
-  padding-top: 2.4vh;
+  padding-top: 4vw;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
   display: -webkit-box;
@@ -1549,10 +1549,10 @@ body > div {
   align-items: center;
   width: 83.33vw;
   margin: 0 auto;
-  margin-top: 6.73vh; }
+  margin-top: 11.20vw; }
   .mine_main .logo {
     width: 43vw;
-    margin-bottom: 10.25vh; }
+    margin-bottom: 17.05vw; }
   .mine_main .mine_label {
     width: 100%;
     color: #fefefe;
@@ -1564,25 +1564,25 @@ body > div {
     border: 0; }
   .mine_main .mine_bottom {
     width: 100%;
-    height: 0.24vh;
+    height: 0.4vw;
     background: #fff;
-    margin-bottom: 3.36vh; }
+    margin-bottom: 6vw; }
   .mine_main .mine_register {
     width: 100%;
-    height: 5.13vh;
+    height: 8.53vw;
     background: #007cd1;
     opacity: 0.7;
     text-align: center;
-    line-height: 5.13vh;
+    line-height: 6vw;
     color: #fff;
-    margin-bottom: 3.04vh; }
+    margin-bottom: 5.05vw; }
   .mine_main .phone_login {
     width: 100%;
     color: #fefefe;
     font-size: 2.77vw;
     height: 2.77vw;
     line-height: 2.77vw;
-    margin-bottom: 6.25vh; }
+    margin-bottom: 10.4vw; }
   .mine_main .other_login {
     font-size: 2.5vw;
     color: #c2c2c3;
@@ -1590,7 +1590,7 @@ body > div {
     line-height: 2.5vw; }
   .mine_main .other_login_img img {
     width: 10vw;
-    margin: 2.24vh 2.5vw; }
+    margin: 3.72vw 2.5vw; }
   .mine_main .xieyi {
     font-size: 2.5vw;
     color: #c2c2c3;
