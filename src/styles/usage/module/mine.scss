@@ -1,7 +1,7 @@
 .mine_container{
     background: url("/images/md_login_bg.jpg");
     height: 100%;
-    padding-top: 2.4vh;
+    padding-top: 4vw;
     @include background-size(100% 100%);
     @include flexbox();
     @include flex-direction(column);

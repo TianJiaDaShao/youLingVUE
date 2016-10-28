@@ -1,11 +1,11 @@
 .mine_main{
   @include middle;
-  margin-top: 6.73vh;
+  margin-top: 11.20vw;
 
 
   .logo{
     width: 43vw;
-    margin-bottom: 10.25vh;
+    margin-bottom: 17.05vw;
   }
 
   .mine_label{
@@ -23,7 +23,7 @@
 
   .mine_bottom{
     width: 100%;
-    height: 0.24vh;
+    height: 0.4vw;
     background: #fff;
     margin-bottom: 3.36vh;
   }
@@ -34,9 +34,9 @@
     background: $activeIcon;
     opacity: 0.7;
     text-align: center;
-    line-height: 5.13vh;
+    line-height: 6vw;
     color: #fff;
-    margin-bottom: 3.04vh;
+    margin-bottom: 5.05vw;
   }
 
   .phone_login{
@@ -45,7 +45,7 @@
     font-size: 2.77vw;
     height: 2.77vw;
     line-height: 2.77vw;
-    margin-bottom: 6.25vh;
+    margin-bottom: 10.4vw;
   }
 
   .other_login{

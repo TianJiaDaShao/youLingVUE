@@ -68,31 +68,35 @@
 	
 	var _danPin2 = _interopRequireDefault(_danPin);
 	
-	var _zhangZiShi = __webpack_require__(20);
+	var _danPinDetail = __webpack_require__(20);
+	
+	var _danPinDetail2 = _interopRequireDefault(_danPinDetail);
+	
+	var _zhangZiShi = __webpack_require__(23);
 	
 	var _zhangZiShi2 = _interopRequireDefault(_zhangZiShi);
 	
-	var _zhangdetail = __webpack_require__(23);
+	var _zhangdetail = __webpack_require__(26);
 	
 	var _zhangdetail2 = _interopRequireDefault(_zhangdetail);
 	
-	var _tuiJianDetail = __webpack_require__(26);
+	var _tuiJianDetail = __webpack_require__(29);
 	
 	var _tuiJianDetail2 = _interopRequireDefault(_tuiJianDetail);
 	
-	var _mine = __webpack_require__(29);
+	var _mine = __webpack_require__(32);
 	
 	var _mine2 = _interopRequireDefault(_mine);
 	
-	var _register = __webpack_require__(32);
+	var _register = __webpack_require__(35);
 	
 	var _register2 = _interopRequireDefault(_register);
 	
-	var _phoneNubLogin = __webpack_require__(35);
+	var _phoneNubLogin = __webpack_require__(38);
 	
 	var _phoneNubLogin2 = _interopRequireDefault(_phoneNubLogin);
 	
-	var _store = __webpack_require__(38);
+	var _store = __webpack_require__(41);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
@@ -148,6 +152,9 @@
 	    '/tuiJianDetail/:id': {
 	        name: 'tuiJianDetail',
 	        component: _tuiJianDetail2.default
+	    },
+	    '/danPinDetail': {
+	        component: _danPinDetail2.default
 	    }
 	
 	});
@@ -619,13 +626,19 @@
 /* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	
+	var _commonUtils = __webpack_require__(5);
+	
+	var _commonUtils2 = _interopRequireDefault(_commonUtils);
+	
 	var _actions = __webpack_require__(11);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
 	//     <div class="danPin-container">
@@ -639,8 +652,31 @@
 	//                 <div class="swiper-wrapper">
 	//                     <div class="swiper-slide">
 	//                         <section id="index-scroll">
+	//                           <div>
+	//                             <div class="head">
+	//                               <img v-bind:src="imgArrow" />
+	//                               <span>下拉刷新...</span>
+	//                             </div>
 	//                             <ul>
-	//                                 <li v-for="l in danPin">
+	//                                 <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
+	//                                   <span>
+	//                                     <i><img v-bind:src="l.img" alt=""></i>
+	//                                     <b>{{l.title}}</b>
+	//                                     <em>￥{{l.price}}</em>
+	//                                   </span>
+	//                                 </li>
+	//                             </ul>
+	//                             <div class="foot">
+	//                               <img v-bind:src="imgArrow" />
+	//                               <span>上拉加载更多...</span>
+	//                             </div>
+	//                           </div>
+	//                         </section>
+	//                     </div>
+	//                     <div class="swiper-slide">
+	//                         <section id="index-scroll2">
+	//                             <ul>
+	//                                 <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
 	//                                   <span>
 	//                                     <i><img v-bind:src="l.img" alt=""></i>
 	//                                     <b>{{l.title}}</b>
@@ -651,9 +687,9 @@
 	//                         </section>
 	//                     </div>
 	//                     <div class="swiper-slide">
-	//                         <section id="index-scroll">
+	//                         <section id="index-scroll3">
 	//                             <ul>
-	//                                 <li v-for="l in danPin">
+	//                                 <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
 	//                                   <span>
 	//                                     <i><img v-bind:src="l.img" alt=""></i>
 	//                                     <b>{{l.title}}</b>
@@ -664,9 +700,9 @@
 	//                         </section>
 	//                     </div>
 	//                     <div class="swiper-slide">
-	//                         <section id="index-scroll">
+	//                         <section id="index-scroll4">
 	//                             <ul>
-	//                                 <li v-for="l in danPin">
+	//                                 <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
 	//                                   <span>
 	//                                     <i><img v-bind:src="l.img" alt=""></i>
 	//                                     <b>{{l.title}}</b>
@@ -677,9 +713,9 @@
 	//                         </section>
 	//                     </div>
 	//                     <div class="swiper-slide">
-	//                         <section id="index-scroll">
+	//                         <section id="index-scroll5">
 	//                             <ul>
-	//                                 <li v-for="l in danPin">
+	//                                 <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
 	//                                   <span>
 	//                                     <i><img v-bind:src="l.img" alt=""></i>
 	//                                     <b>{{l.title}}</b>
@@ -690,9 +726,9 @@
 	//                         </section>
 	//                     </div>
 	//                     <div class="swiper-slide">
-	//                         <section id="index-scroll">
+	//                         <section id="index-scroll6">
 	//                             <ul>
-	//                                 <li v-for="l in danPin">
+	//                                 <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
 	//                                   <span>
 	//                                     <i><img v-bind:src="l.img" alt=""></i>
 	//                                     <b>{{l.title}}</b>
@@ -703,9 +739,9 @@
 	//                         </section>
 	//                     </div>
 	//                     <div class="swiper-slide">
-	//                         <section id="index-scroll">
+	//                         <section id="index-scroll7">
 	//                             <ul>
-	//                                 <li v-for="l in danPin">
+	//                                 <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
 	//                                   <span>
 	//                                     <i><img v-bind:src="l.img" alt=""></i>
 	//                                     <b>{{l.title}}</b>
@@ -716,9 +752,9 @@
 	//                         </section>
 	//                     </div>
 	//                     <div class="swiper-slide">
-	//                         <section id="index-scroll">
+	//                         <section id="index-scroll8">
 	//                             <ul>
-	//                                 <li v-for="l in danPin">
+	//                                 <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
 	//                                   <span>
 	//                                     <i><img v-bind:src="l.img" alt=""></i>
 	//                                     <b>{{l.title}}</b>
@@ -729,22 +765,9 @@
 	//                         </section>
 	//                     </div>
 	//                     <div class="swiper-slide">
-	//                         <section id="index-scroll">
+	//                         <section id="index-scroll9">
 	//                             <ul>
-	//                                 <li v-for="l in danPin">
-	//                                   <span>
-	//                                     <i><img v-bind:src="l.img" alt=""></i>
-	//                                     <b>{{l.title}}</b>
-	//                                     <em>￥{{l.price}}</em>
-	//                                   </span>
-	//                                 </li>
-	//                             </ul>
-	//                         </section>
-	//                     </div>
-	//                     <div class="swiper-slide">
-	//                         <section id="index-scroll">
-	//                             <ul>
-	//                                 <li v-for="l in danPin">
+	//                                 <li v-for="l in danPin" v-link="{path:'/danPinDetail'}">
 	//                                   <span>
 	//                                     <i><img v-bind:src="l.img" alt=""></i>
 	//                                     <b>{{l.title}}</b>
@@ -762,48 +785,233 @@
 	//
 	// <script>
 	var mySwiper = null;
-	
 	exports.default = {
-	    vuex: {
-	        actions: {
-	            change: _actions.changeIndex
-	        }
-	    },
-	    data: function data() {
-	        return {
-	            danPin: [],
-	            curIndex: 0,
-	            danPinNav: ['最新', '内搭', '外套', '裤子', '鞋', '箱包', '配饰', '饰品', '其他']
-	        };
-	    },
-	
-	    ready: function ready() {
-	        var _this = this;
-	
-	        this.change(1);
-	        var that = this;
-	        this.$http.get('/mock/danPin.json').then(function (res) {
-	            _this.danPin = res.data.data;
-	
-	            setTimeout(function () {
-	                new IScroll('#index-scroll', {
-	                    click: true
-	                });
-	            }, 500);
-	
-	            mySwiper = new Swiper("#index-swiper", {
-	                onSlideChangeStart: function onSlideChangeStart() {
-	                    that.curIndex = mySwiper.activeIndex;
-	                }
-	            });
-	        });
-	    },
-	    methods: {
-	        switchSwiper: function switchSwiper(index) {
-	            this.curIndex = index;
-	            mySwiper.slideTo(index);
-	        }
+	  vuex: {
+	    actions: {
+	      change: _actions.changeIndex
 	    }
+	  },
+	  data: function data() {
+	    return {
+	      danPin: [],
+	      curIndex: 0,
+	      danPinNav: ['最新', '内搭', '外套', '裤子', '鞋', '箱包', '配饰', '饰品', '其他'],
+	      imgArrow: './images/arrow.png'
+	    };
+	  },
+	
+	  ready: function ready() {
+	    var _this = this;
+	
+	    this.change(1);
+	    var that = this;
+	    this.$http.get('/mock/danPin.json').then(function (res) {
+	      _this.danPin = res.data.data;
+	      Vue.nextTick(function () {
+	        console.log(123);
+	        _commonUtils2.default.isAllLoaded('#index-scroll', function () {
+	          var myScroll = new IScroll('#index-scroll', {
+	            probeType: 3,
+	            click: true
+	          });
+	          var myScroll2 = new IScroll('#index-scroll2', {
+	            probeType: 3,
+	            click: true
+	          });
+	          var myScroll3 = new IScroll('#index-scroll3', {
+	            probeType: 3,
+	            click: true
+	          });
+	          var myScroll4 = new IScroll('#index-scroll4', {
+	            probeType: 3,
+	            click: true
+	          });
+	          var myScroll5 = new IScroll('#index-scroll5', {
+	            probeType: 3,
+	            click: true
+	          });
+	          var myScroll6 = new IScroll('#index-scroll6', {
+	            probeType: 3,
+	            click: true
+	          });
+	          var myScroll7 = new IScroll('#index-scroll7', {
+	            probeType: 3,
+	            click: true
+	          });
+	          var myScroll8 = new IScroll('#index-scroll8', {
+	            probeType: 3,
+	            click: true
+	          });
+	          var myScroll9 = new IScroll('#index-scroll9', {
+	            probeType: 3,
+	            click: true
+	          });
+	
+	          myScroll.scrollTo(0, -35);
+	
+	          var head = $('.head img'),
+	              topImgHasClass = head.hasClass('up');
+	          var foot = $('.foot img'),
+	              bottomImgHasClass = head.hasClass('down');
+	
+	          myScroll.on('scroll', function () {
+	            var y = this.y,
+	                maxY = this.maxScrollY - y;
+	            if (y >= 0) {
+	              !topImgHasClass && head.addClass('up');
+	              return '';
+	            }
+	            if (maxY >= 0) {
+	              !bottomImgHasClass && foot.addClass('down');
+	              return '';
+	            }
+	          });
+	
+	          myScroll.on('scrollEnd', function () {
+	            if (this.y >= -35 && this.y < 0) {
+	              myScroll.scrollTo(0, -35);
+	              head.removeClass('up');
+	            } else if (this.y >= 0) {
+	              head.attr('src', './images/ajax-loader.gif');
+	
+	              // ajax下拉刷新数据
+	              that.$http.get('/mock/danPin_refresh.json').then(function (res) {
+	                that.danPin = res.data.data.concat(that.danPin);
+	                myScroll.scrollTo(0, -35);
+	                head.removeClass('up');
+	                head.attr('src', './images/arrow.png');
+	                Vue.nextTick(function () {
+	                  //当你的滚动区域的内容发生改变 或是 滚动区域不正确，都用通过调用refresh 来使得iscroll 重新计算滚动的区域，包括滚动条，来使得iscroll 适合当前的dom
+	                  myScroll.refresh();
+	                  myScroll2.refresh();
+	                  myScroll3.refresh();
+	                  myScroll4.refresh();
+	                  myScroll5.refresh();
+	                  myScroll6.refresh();
+	                  myScroll7.refresh();
+	                  myScroll8.refresh();
+	                  myScroll9.refresh();
+	                });
+	              });
+	            }
+	
+	            var self = this;
+	            var maxY = this.maxScrollY - this.y;
+	            if (maxY > -35 && maxY < 0) {
+	              myScroll.scrollTo(0, self.maxScrollY + 35);
+	              foot.removeClass('down');
+	            } else if (maxY >= 0) {
+	              foot.attr('src', './images/ajax-loader.gif');
+	              //ajax上拉加载数据
+	              that.$http.get('/mock/danPin_more.json').then(function (res) {
+	                that.danPin = that.danPin.concat(res.data.data);
+	                foot.removeClass('down');
+	                foot.attr('src', './images/arrow.png');
+	                Vue.nextTick(function () {
+	                  myScroll.refresh();
+	                  myScroll2.refresh();
+	                  myScroll3.refresh();
+	                  myScroll4.refresh();
+	                  myScroll5.refresh();
+	                  myScroll6.refresh();
+	                  myScroll7.refresh();
+	                  myScroll8.refresh();
+	                  myScroll9.refresh();
+	                  myScroll.scrollTo(0, self.maxScrollY + 35);
+	                  myScroll2.scrollTo(0, self.maxScrollY + 35);
+	                  myScroll3.scrollTo(0, self.maxScrollY + 35);
+	                  myScroll4.scrollTo(0, self.maxScrollY + 35);
+	                  myScroll5.scrollTo(0, self.maxScrollY + 35);
+	                  myScroll6.scrollTo(0, self.maxScrollY + 35);
+	                  myScroll7.scrollTo(0, self.maxScrollY + 35);
+	                  myScroll8.scrollTo(0, self.maxScrollY + 35);
+	                  myScroll9.scrollTo(0, self.maxScrollY + 35);
+	                });
+	              });
+	            }
+	          });
+	        });
+	      });
+	
+	      // setTimeout(function() {
+	      //     new IScroll('#index-scroll1',{
+	      //       probeType: 3,
+	      //       mouseWheel: true,
+	      //       click:true
+	      //     }
+	      // );
+	      // }, 500);
+	      //
+	      // setTimeout(function() {
+	      //     new IScroll('#index-scroll2',{
+	      //             click:true
+	      //     }
+	      // );
+	      // }, 500);
+	      //
+	      // setTimeout(function() {
+	      //     new IScroll('#index-scroll3',{
+	      //             click:true
+	      //     }
+	      // );
+	      // }, 500);
+	      //
+	      // setTimeout(function() {
+	      //     new IScroll('#index-scroll4',{
+	      //             click:true
+	      //     }
+	      // );
+	      // }, 500);
+	      //
+	      // setTimeout(function() {
+	      //     new IScroll('#index-scroll5',{
+	      //             click:true
+	      //     }
+	      // );
+	      // }, 500);
+	      //
+	      // setTimeout(function() {
+	      //     new IScroll('#index-scroll6',{
+	      //             click:true
+	      //     }
+	      // );
+	      // }, 500);
+	      //
+	      // setTimeout(function() {
+	      //     new IScroll('#index-scroll7',{
+	      //             click:true
+	      //     }
+	      // );
+	      // }, 500);
+	      //
+	      // setTimeout(function() {
+	      //     new IScroll('#index-scroll8',{
+	      //             click:true
+	      //     }
+	      // );
+	      // }, 500);
+	      //
+	      // setTimeout(function() {
+	      //     new IScroll('#index-scroll9',{
+	      //             click:true
+	      //     }
+	      // );
+	      // }, 500);
+	
+	
+	      mySwiper = new Swiper("#index-swiper", {
+	        onSlideChangeStart: function onSlideChangeStart() {
+	          that.curIndex = mySwiper.activeIndex;
+	        }
+	      });
+	    });
+	  },
+	  methods: {
+	    switchSwiper: function switchSwiper(index) {
+	      this.curIndex = index;
+	      mySwiper.slideTo(index);
+	    }
+	  }
 	};
 	// </script>
 
@@ -813,7 +1021,7 @@
 /* 19 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div class=\"danPin-container\">\n    <nav>\n        <ul id=\"swiper-nav\">\n            <li v-for=\"nav in danPinNav\" v-on:click=\"switchSwiper($index)\" v-bind:class=\"curIndex == $index ? 'active': ''\">{{nav}}</li>\n        </ul>\n    </nav>\n    <section>\n        <div class=\"swiper-container\" id=\"index-swiper\">\n            <div class=\"swiper-wrapper\">\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll\">\n                        <ul>\n                            <li v-for=\"l in danPin\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll\">\n                        <ul>\n                            <li v-for=\"l in danPin\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll\">\n                        <ul>\n                            <li v-for=\"l in danPin\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll\">\n                        <ul>\n                            <li v-for=\"l in danPin\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll\">\n                        <ul>\n                            <li v-for=\"l in danPin\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll\">\n                        <ul>\n                            <li v-for=\"l in danPin\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll\">\n                        <ul>\n                            <li v-for=\"l in danPin\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll\">\n                        <ul>\n                            <li v-for=\"l in danPin\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll\">\n                        <ul>\n                            <li v-for=\"l in danPin\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n            </div>\n        </div>\n    </section>\n</div>\n";
+	module.exports = "\n<div class=\"danPin-container\">\n    <nav>\n        <ul id=\"swiper-nav\">\n            <li v-for=\"nav in danPinNav\" v-on:click=\"switchSwiper($index)\" v-bind:class=\"curIndex == $index ? 'active': ''\">{{nav}}</li>\n        </ul>\n    </nav>\n    <section>\n        <div class=\"swiper-container\" id=\"index-swiper\">\n            <div class=\"swiper-wrapper\">\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll\">\n                      <div>\n                        <div class=\"head\">\n                          <img v-bind:src=\"imgArrow\" />\n                          <span>下拉刷新...</span>\n                        </div>\n                        <ul>\n                            <li v-for=\"l in danPin\" v-link=\"{path:'/danPinDetail'}\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                        <div class=\"foot\">\n                          <img v-bind:src=\"imgArrow\" />\n                          <span>上拉加载更多...</span>\n                        </div>\n                      </div>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll2\">\n                        <ul>\n                            <li v-for=\"l in danPin\" v-link=\"{path:'/danPinDetail'}\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll3\">\n                        <ul>\n                            <li v-for=\"l in danPin\" v-link=\"{path:'/danPinDetail'}\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll4\">\n                        <ul>\n                            <li v-for=\"l in danPin\" v-link=\"{path:'/danPinDetail'}\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll5\">\n                        <ul>\n                            <li v-for=\"l in danPin\" v-link=\"{path:'/danPinDetail'}\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll6\">\n                        <ul>\n                            <li v-for=\"l in danPin\" v-link=\"{path:'/danPinDetail'}\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll7\">\n                        <ul>\n                            <li v-for=\"l in danPin\" v-link=\"{path:'/danPinDetail'}\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll8\">\n                        <ul>\n                            <li v-for=\"l in danPin\" v-link=\"{path:'/danPinDetail'}\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n                <div class=\"swiper-slide\">\n                    <section id=\"index-scroll9\">\n                        <ul>\n                            <li v-for=\"l in danPin\" v-link=\"{path:'/danPinDetail'}\">\n                              <span>\n                                <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n                                <b>{{l.title}}</b>\n                                <em>￥{{l.price}}</em>\n                              </span>\n                            </li>\n                        </ul>\n                    </section>\n                </div>\n            </div>\n        </div>\n    </section>\n</div>\n";
 
 /***/ },
 /* 20 */
@@ -824,8 +1032,102 @@
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src\\scripts\\components\\zhangZiShi.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] src\\scripts\\components\\danPinDetail.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(22)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "./danPinDetail.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 21 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	// <template>
+	//   <img class="img" v-link="{path:'/index/danPin'}" src="/images/md_nav_back.png" alt="">
+	//   <div class="danPinD-container">
+	//       <div  id="index-scroll">
+	//         <ul>
+	//           <li v-for="l in danPin">
+	//             <span>
+	//               <i><img v-bind:src="l.img" alt=""></i>
+	//               <b>{{l.title}}</b>
+	//               <em>￥{{l.price}}</em>
+	//             </span>
+	//           </li>
+	//       </ul>
+	//       </div>
+	//   </div>
+	// </template>
+	//
+	// <script>
+	var mySwiper = null;
+	exports.default = {
+	  data: function data() {
+	    return {
+	      danPin: []
+	    };
+	  },
+	
+	  ready: function ready() {
+	    var _this = this;
+	
+	    var that = this;
+	    this.$http.get('/mock/danPin.json').then(function (res) {
+	      _this.danPin = res.data.data;
+	
+	      setTimeout(function () {
+	        new IScroll('#index-scroll', {
+	          click: true
+	        });
+	      }, 500);
+	    });
+	  },
+	  methods: {
+	    switchSwiper: function switchSwiper(index) {
+	      this.curIndex = index;
+	      mySwiper.slideTo(index);
+	    }
+	  }
+	};
+	// </script>
+
+	/* generated by vue-loader */
+
+/***/ },
+/* 22 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<img class=\"img\" v-link=\"{path:'/index/danPin'}\" src=\"/images/md_nav_back.png\" alt=\"\">\n<div class=\"danPinD-container\">\n    <div  id=\"index-scroll\">\n      <ul>\n        <li v-for=\"l in danPin\">\n          <span>\n            <i><img v-bind:src=\"l.img\" alt=\"\"></i>\n            <b>{{l.title}}</b>\n            <em>￥{{l.price}}</em>\n          </span>\n        </li>\n    </ul>\n    </div>\n</div>\n";
+
+/***/ },
+/* 23 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__vue_script__ = __webpack_require__(24)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src\\scripts\\components\\zhangZiShi.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(25)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -844,10 +1146,10 @@
 	})()}
 
 /***/ },
-/* 21 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -855,6 +1157,36 @@
 	
 	var _actions = __webpack_require__(11);
 	
+	var _commonUtils = __webpack_require__(5);
+	
+	var _commonUtils2 = _interopRequireDefault(_commonUtils);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// <template>
+	//     <div class="gesture">
+	//         <header>
+	//             涨姿势
+	//         </header>
+	//         <section id="zhangZiShi-scroll">
+	//             <ul>
+	//
+	//                 <li v-for="l in list">
+	//                     <img v-bind:src="l.img" v-link="{path:'/zhangdetail'}">
+	//                     <i v-link="{path:'/zhangdetail'}">{{l.title}}</i>
+	//                     <p>{{l.detail}}</p>
+	//                     <b class="b1"><span>涨姿势</span><span>{{l.type}}</span></b>
+	//                     <b class="b2"><span>作者：领哥</span><span><img src="/images/md_view_xs.png" alt="">{{l.num}}</span><span>{{l.time}}</span></b>
+	//                 </li>
+	//                 <div class="foot">
+	//                     <img v-bind:src="imgArrow" />
+	//                     <span>上拉加载更多...</span>
+	//                 </div>
+	//             </ul>
+	//         </section>
+	//     </div>
+	// </template>
+	// <script>
 	exports.default = {
 	    vuex: {
 	        actions: {
@@ -863,7 +1195,8 @@
 	    },
 	    data: function data() {
 	        return {
-	            list: []
+	            list: [],
+	            imgArrow: './images/arrow.png'
 	        };
 	    },
 	
@@ -874,55 +1207,78 @@
 	        var that = this;
 	        this.$http.get('/mock/zhangZiShi.json').then(function (res) {
 	            _this.list = res.data.data;
-	            setTimeout(function () {
-	                new IScroll('#index-scroll', {
-	                    click: true
+	
+	            Vue.nextTick(function () {
+	                _commonUtils2.default.isAllLoaded('#zhangZiShi-scroll', function () {
+	                    var myScroll = new IScroll('#zhangZiShi-scroll', {
+	                        probeType: 3,
+	                        click: true
+	                    });
+	
+	                    var foot = $('.foot img'),
+	                        bottomImgHasClass = foot.hasClass('down');
+	
+	                    myScroll.on('scroll', function () {
+	                        var y = this.y,
+	                            maxY = this.maxScrollY - y;
+	
+	                        if (maxY >= 0) {
+	                            !bottomImgHasClass && foot.addClass('down');
+	                            return '';
+	                        }
+	                    });
+	
+	                    myScroll.on('scrollEnd', function () {
+	                        if (this.y >= 0) {
+	                            foot.attr('src', './images/ajax-loader.gif');
+	                        }
+	
+	                        var self = this;
+	                        var maxY = this.maxScrollY - this.y;
+	                        if (maxY > -35 && maxY < 0) {
+	                            myScroll.scrollTo(0, self.maxScrollY + 35);
+	                            foot.removeClass('down');
+	                        } else if (maxY >= 0) {
+	                            foot.attr('src', './images/ajax-loader.gif');
+	                            //ajax上拉加载数据
+	                            that.$http.get('/mock/zhangZiShimore.json').then(function (res) {
+	                                that.list = that.list.concat(res.data.data);
+	                                foot.removeClass('down');
+	                                foot.attr('src', './images/arrow.png');
+	                                Vue.nextTick(function () {
+	                                    myScroll.scrollTo(0, self.maxScrollY + 35);
+	                                    myScroll.refresh();
+	                                });
+	                            });
+	                        }
+	                    });
 	                });
-	            }, 500);
+	            });
 	        });
 	    }
+	
 	};
 	// </script>
 
 	/* generated by vue-loader */
-	// <template>
-	//     <div class="gesture">
-	//         <header>
-	//             涨姿势
-	//         </header>
-	//         <section id="index-scroll">
-	//             <ul>
-	//
-	//                 <li v-for="l in list" >
-	//                     <img v-bind:src="l.img" v-link="{path:'/zhangdetail'}">
-	//                     <i v-link="{path:'/zhangdetail'}">{{l.title}}</i>
-	//                     <p>{{l.detail}}</p>
-	//                     <b class="b1"><span>涨姿势</span><span>{{l.type}}</span></b>
-	//                     <b class="b2"><span>作者：领哥</span><span><img src="/images/md_view_xs.png" alt="">{{l.num}}</span><span>{{l.time}}</span></b>
-	//                 </li>
-	//             </ul>
-	//         </section>
-	//     </div>
-	// </template>
-	// <script>
 
 /***/ },
-/* 22 */
+/* 25 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div class=\"gesture\">\n    <header>\n        涨姿势\n    </header>\n    <section id=\"index-scroll\">\n        <ul>\n\n            <li v-for=\"l in list\" >\n                <img v-bind:src=\"l.img\" v-link=\"{path:'/zhangdetail'}\">\n                <i v-link=\"{path:'/zhangdetail'}\">{{l.title}}</i>\n                <p>{{l.detail}}</p>\n                <b class=\"b1\"><span>涨姿势</span><span>{{l.type}}</span></b>\n                <b class=\"b2\"><span>作者：领哥</span><span><img src=\"/images/md_view_xs.png\" alt=\"\">{{l.num}}</span><span>{{l.time}}</span></b>\n            </li>\n        </ul>\n    </section>\n</div>\n";
+	module.exports = "\n<div class=\"gesture\">\n    <header>\n        涨姿势\n    </header>\n    <section id=\"zhangZiShi-scroll\">\n        <ul>\n\n            <li v-for=\"l in list\">\n                <img v-bind:src=\"l.img\" v-link=\"{path:'/zhangdetail'}\">\n                <i v-link=\"{path:'/zhangdetail'}\">{{l.title}}</i>\n                <p>{{l.detail}}</p>\n                <b class=\"b1\"><span>涨姿势</span><span>{{l.type}}</span></b>\n                <b class=\"b2\"><span>作者：领哥</span><span><img src=\"/images/md_view_xs.png\" alt=\"\">{{l.num}}</span><span>{{l.time}}</span></b>\n            </li>\n            <div class=\"foot\">\n                <img v-bind:src=\"imgArrow\" />\n                <span>上拉加载更多...</span>\n            </div>\n        </ul>\n    </section>\n</div>\n";
 
 /***/ },
-/* 23 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(24)
+	__vue_script__ = __webpack_require__(27)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\scripts\\components\\zhangdetail.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(25)
+	__vue_template__ = __webpack_require__(28)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -941,7 +1297,7 @@
 	})()}
 
 /***/ },
-/* 24 */
+/* 27 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1054,22 +1410,22 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 25 */
+/* 28 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"gesture_detail\">\n    <div v-if=\"shareshow\" class=\"yo-mask\"></div>\n    <header>\n        <div>\n            <div>\n                <img v-link=\"{path:'/index/zhangZiShi'}\" src=\"/images/md_nav_back.png\" alt=\"\">\n                <p>有领资讯</p>\n            </div>\n            <img src=\"/images/md_share.png\" @click=\"showShare\" alt=\"\">\n        </div>\n    </header>\n    <div id=\"share\" v-if=\"shareshow\">\n        <p class=\"sharetop\"><img @click=\"notshowShare\" src=\"/images/com_taobao_tae_sdk_web_view_title_bar_close.9.png\" alt=\"\">&nbsp;&nbsp;分享</p>\n        <ul>\n            <li><img src=\"/images/md_share_wechat.png\" alt=\"\">\n                <p>微信好友</p>\n            </li>\n            <li><img src=\"/images/md_share_moments.png\" alt=\"\">\n                <p>微信朋友圈</p>\n            </li>\n            <li><img src=\"/images/md_share_weibo.png\" alt=\"\">\n                <p>新浪微博</p>\n            </li>\n        </ul>\n        <ul>\n            <li><img src=\"/images/md_share_qq.png\" alt=\"\">\n                <p>QQ好友</p>\n            </li>\n            <li><img src=\"/images/md_share_copylink.png\" alt=\"\">\n                <p>复制链接</p>\n            </li>\n        </ul>\n    </div>\n    <section id=\"index-scroll\">\n        <div>\n            <div class=\"top\" v-for=\"l in list\">\n                <i>{{l.title}}</i>\n                <b class=\"b1\"><span>涨姿势</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>{{l.type}}</span></b>\n                <b class=\"b2\"><span>作者：领哥</span><span><img src=\"/images/md_view_xs.png\" alt=\"\">&nbsp;&nbsp;{{l.num}}</span><span>{{l.time}}</span></b>\n            </div>\n            <div class=\"detail\">\n                <p>关于肤色这个问题，选择衣服颜色时的搭配就会显得尤为重要，无论是肤色黑的还是白的都会有一定的烦恼。</p>\n                <p>因此小编这期打算说一下肤色偏白的人更适合怎样的色调？</p>\n                <p>How to choose? 肤色偏白虽然会比肤色偏黑的男生多了很多选择，但有时候反而是太多却不知道怎样去挑选。</p>\n                <img src=\"/images/fd40bc766771c3be80fb085666c259d1.jpg\" alt=\"\">\n                <p>因此可能很多肤色白的男生始终坚持黑白灰三个基本色，而事实上你可以大胆去尝试其他色系，基本都不会有问题。<b>肤色白的人对跳跃性的颜色会有很好的掌控能力，</b>很多时候都能穿出属于自己的风格。</p>\n                <img src=\"/images/58b93e6ffcc4c149c9bb35a104f0058c.jpg\" alt=\"\">\n                <p>首选说一下经典的军绿色，肤色白的人会很好地映衬出这件颜色的特别之处，而肤色偏黑的人穿上去则会显得脏脏的。冬天则外搭一件白色或者黑色的夹克，满满的学院风，瞬间都青春了好几岁。</p>\n                <img src=\"/images/a88adaabfb5817ffd6b14b9f87e6ab54.jpg\" alt=\"\">\n                <p><b>对于肤色白的男生来说，浅色系单品真的很上镜。</b>类似浅灰，浅蓝，水洗白这种色调，都可以考虑入手，因为会显得你既大方同时又带给别人一种很舒适的感觉。</p>\n                <img src=\"/images/7e241f1a66f8a54b50e388d24b07bd21.jpg\" alt=\"\">\n                <p>有一种颜色，真的是只适合肤色白的人穿，肤色黑的想都别想....这个颜色就是类似这样的藕色，肤色白的穿了就全都是各种显气质，肤色黑的，就呵呵呵了。</p>\n                <img src=\"/images/70069d5e28f79522d53524364feedd35.jpg\" alt=\"\">\n                <p>有一种颜色，真的是只适合肤色白的人穿，肤色黑的想都别想....这个颜色就是类似这样的藕色，肤色白的穿了就全都是各种显气质，肤色黑的，就呵呵呵了。</p>\n                <img src=\"/images/012b39c1b01ea2aa417618681e43e46a.jpg\" alt=\"\">\n                <p>有一种颜色，真的是只适合肤色白的人穿，肤色黑的想都别想....这个颜色就是类似这样的藕色，肤色白的穿了就全都是各种显气质，肤色黑的，就呵呵呵了。</p>\n                <img src=\"/images/b31b88045b0127b37b2b8a05a57967fa.jpg\" alt=\"\">\n                <p>有一种颜色，真的是只适合肤色白的人穿，肤色黑的想都别想....这个颜色就是类似这样的藕色，肤色白的穿了就全都是各种显气质，肤色黑的，就呵呵呵了。</p>\n                <img src=\"/images/b3aebe2378f76854d04257037929acbd (1).jpg\" alt=\"\">\n                <p>有一种颜色，真的是只适合肤色白的人穿，肤色黑的想都别想....这个颜色就是类似这样的藕色，肤色白的穿了就全都是各种显气质，肤色黑的，就呵呵呵了。</p>\n                <img src=\"/images/c9129ab3dd9fc1a26a64a9aa73eacbdb.jpg\" alt=\"\">\n                <p>有一种颜色，真的是只适合肤色白的人穿，肤色黑的想都别想....这个颜色就是类似这样的藕色，肤色白的穿了就全都是各种显气质，肤色黑的，就呵呵呵了。</p>\n                <img src=\"/images/aaf479700527dc092535b7d9b84a2fb7.jpg\" alt=\"\">\n                <p>有一种颜色，真的是只适合肤色白的人穿，肤色黑的想都别想....这个颜色就是类似这样的藕色，肤色白的穿了就全都是各种显气质，肤色黑的，就呵呵呵了。</p>\n            </div>\n        </div>\n    </section>\n</div>\n";
 
 /***/ },
-/* 26 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(27)
+	__vue_script__ = __webpack_require__(30)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\scripts\\components\\tuiJianDetail.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(28)
+	__vue_template__ = __webpack_require__(31)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -1088,7 +1444,7 @@
 	})()}
 
 /***/ },
-/* 27 */
+/* 30 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1156,22 +1512,22 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 28 */
+/* 31 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"tuijian-detail\">\n  <header>\n    <ul>\n      <li v-link=\"{path: '/index'}\">返回</li>\n      <li class=\"title\">\n        {{{detailInfo.title}}}\n      </li>\n      <li class=\"iconfont\">&#xe684;</li>\n    </ul>\n  </header>\n  <article id=\"content\" v-scroll=\"artId\">\n    <div>\n      {{{detailInfo.content}}}\n    </div>\n  </article>\n</div>\n";
 
 /***/ },
-/* 29 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(30)
+	__vue_script__ = __webpack_require__(33)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\scripts\\components\\mine.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(31)
+	__vue_template__ = __webpack_require__(34)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -1190,7 +1546,7 @@
 	})()}
 
 /***/ },
-/* 30 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1230,22 +1586,22 @@
 	// <script>
 
 /***/ },
-/* 31 */
+/* 34 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"mine_container\">\n    <img :src=\"Xurl\" class=\"Xurl\" onclick=\"window.history.go(-1)\">\n    <router-view></router-view>\n</div>\n";
 
 /***/ },
-/* 32 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(33)
+	__vue_script__ = __webpack_require__(36)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\scripts\\components\\register.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(34)
+	__vue_template__ = __webpack_require__(37)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -1264,7 +1620,7 @@
 	})()}
 
 /***/ },
-/* 33 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1330,22 +1686,22 @@
 	// <script>
 
 /***/ },
-/* 34 */
+/* 37 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"mine_main\">\n    <img :src=\"logo\" class=\"logo\">\n    <h3 class=\"mine_label\"><span>{{label}}</span></h3>\n    <input type=\"text\" name=\"phone\" v-model=\"phoneNub\" id=\"register_nub\" @change=\"zhengZe\">\n    <div class=\"mine_bottom\"></div>\n    <div class=\"mine_register\">{{register}}</div>\n    <h3 class=\"phone_login\"><span v-link=\"{path:phoneNubLoginPath}\">{{phone_login}}</span></h3>\n    <h4 class=\"other_login\">{{other_login}}</h4>\n    <div class=\"other_login_img\">\n      <img v-for=\"tab in other\" :src=\"tab.other_login_img\" alt=\"\">\n    </div>\n    <h4 class=\"xieyi\">\n      {{tongyi}}\n      <span>{{xieyi}}</span>\n    </h4>\n</div>\n";
 
 /***/ },
-/* 35 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(36)
+	__vue_script__ = __webpack_require__(39)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\scripts\\components\\phoneNubLogin.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(37)
+	__vue_template__ = __webpack_require__(40)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -1364,7 +1720,7 @@
 	})()}
 
 /***/ },
-/* 36 */
+/* 39 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1440,13 +1796,13 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 37 */
+/* 40 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"phoneNubLogin_main\">\n    <img :src=\"logo\" class=\"logo\">\n    <nav>\n        <div v-for=\"nav in loginNav\" @click=\"switchLogin($index)\" :class=\"loginIndex == $index ? 'navLoginActive': ''\">\n            <span>{{nav}}</span>\n        </div>\n    </nav>\n    <div class=\"swiper-container\">\n      <div class=\"swiper-wrapper\">\n          <div class=\"swiper-slide\">\n            <input type=\"text\" name=\"name\" value=\"手机号\">\n            <input type=\"text\" name=\"name\" value=\"密码\">\n          </div>\n          <div class=\"swiper-slide\">\n            <input type=\"text\" name=\"name\" value=\"手机号\">\n            <input type=\"text\" name=\"name\" value=\"验证码\">\n          </div>\n      </div>\n    </div>\n    <div class=\"phoneNubLogin_bt\">\n        <div class=\"login_button\">{{login}}</div>\n        <h3 class=\"register\"><span v-link=\"{path:registerPath}\">{{register}}</span></h3>\n        <h4 class=\"other_login\">{{other_login}}</h4>\n        <div class=\"other_login_img\">\n          <img v-for=\"tab in other\" :src=\"tab.other_login_img\" alt=\"\">\n        </div>\n    </div>\n</div>\n";
 
 /***/ },
-/* 38 */
+/* 41 */
 /***/ function(module, exports) {
 
 	"use strict";

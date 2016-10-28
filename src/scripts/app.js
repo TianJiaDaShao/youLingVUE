@@ -8,6 +8,7 @@ import firstPage from "./components/firstPage.vue";
 import index from "./components/index.vue";
 import tuiJian from "./components/tuiJian.vue";
 import danPin from "./components/danPin.vue";
+import danPinDetail from "./components/danPinDetail.vue";
 import zhangZiShi from "./components/zhangZiShi.vue";
 import zhangdetail from "./components/zhangdetail.vue";
 import tuiJianDetail from "./components/tuiJianDetail.vue";
@@ -60,6 +61,9 @@ router.map({
     '/tuiJianDetail/:id': {
         name: 'tuiJianDetail',
         component: tuiJianDetail
+    },
+    '/danPinDetail': {
+        component: danPinDetail
     }
 
 });
