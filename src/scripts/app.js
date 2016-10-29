@@ -55,7 +55,8 @@ router.map({
      }
    },
 
-    '/zhangdetail': {
+    '/zhangdetail/:id': {
+        name:'zhangdetail',
         component: zhangdetail
     },
     '/tuiJianDetail/:id': {

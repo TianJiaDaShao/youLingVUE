@@ -7,7 +7,7 @@
             <ul>
 
                 <li v-for="l in list">
-                    <img v-bind:src="l.img" v-link="{path:'/zhangdetail'}">
+                    <img v-bind:src="l.img" v-link="{name: 'zhangdetail', params: {id: l.id}}">
                     <i v-link="{path:'/zhangdetail'}">{{l.title}}</i>
                     <p>{{l.detail}}</p>
                     <b class="b1"><span>涨姿势</span><span>{{l.type}}</span></b>
