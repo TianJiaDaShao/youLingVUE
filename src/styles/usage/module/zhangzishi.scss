@@ -22,6 +22,20 @@
         color: #666;
         border-bottom: 1px solid #aaa;
     }
+    #backup{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        right:30px;
+        bottom: 60px;
+        background: #d2f28d;
+        img{
+            width: 100%;
+            height: 100%;
+            transform: rotate(90deg) ;
+            -webkit-transform: rotate(90deg) ;
+        }
+    }
     section{
         width: 100vw;
         overflow: hidden;
@@ -67,7 +81,7 @@
                     height: 51.56vw;
                 };
                 i{
-                    padding: 8px 0;
+                    padding-top: 8px;
                     line-height: 8vw;
                     font-size: 6.5vw;
                     // @include ellipsis();
@@ -75,12 +89,12 @@
                 p{
                     line-height: 5.5vw;
                     font-size: 4.5vw;
-                    padding: 8px 0;
+                    padding-bottom: 8px;
                 }
                 b.b1{
                     height: 5.5vw;
                     font-size: 4.5vw;
-                    margin: 8px 0;
+                    margin-bottom: 8px;
                     @include flexbox();
                     @include align-items(center);
                     span{

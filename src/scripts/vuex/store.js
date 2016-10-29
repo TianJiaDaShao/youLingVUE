@@ -1,5 +1,6 @@
 const state = {
-    tabIndex: 0
+    tabIndex: 0,
+    // myScroll : new IScroll('#zhangZiShi-scroll')
 }
 
 const mutations = {

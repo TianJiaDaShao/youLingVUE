@@ -19,9 +19,13 @@
                 </div>
             </ul>
         </section>
+        <div id="backup" @click="backup">
+            <img src="/images/weibosdk_navigationbar_back.png">
+        </div>
     </div>
 </template>
 <script>
+    var myScrollBack;
     import {
         changeIndex
     } from "../vuex/actions";
@@ -39,7 +43,9 @@
                 imgArrow: './images/arrow.png',
             }
         },
+
         ready: function() {
+
             this.change(2);
             var that = this;
             this.$http.get('/mock/zhangZiShi.json')
@@ -52,8 +58,7 @@
                                 probeType: 3,
                                 click: true
                             });
-
-
+                            myScrollBack = myScroll;
                             var foot = $('.foot img'),
                                 bottomImgHasClass = foot.hasClass('down');
 
@@ -68,7 +73,7 @@
                             });
 
                             myScroll.on('scrollEnd', function() {
-                             if (this.y >= 0) {
+                                if (this.y >= 0) {
                                     foot.attr('src', './images/ajax-loader.gif');
                                 }
 
@@ -95,11 +100,12 @@
                         });
                     });
 
-
-
-
-
                 })
+        },
+        methods: {
+            backup() {
+                myScrollBack.scrollTo(0, 0)
+            }
         }
 
 
